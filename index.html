@@ -1,0 +1,176 @@
+<!-- !dropdown + sidebar anim, custom -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glenic Hospital</title>
+
+    <!-- tailwindCSS setup -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+
+    <!-- for video popup -->
+    <!-- <link rel="stylesheet" href="./css/magnific-popup.css"> -->
+
+    <!-- swiper  -->
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
+
+    <!-- Animate.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <!-- <link rel="stylesheet" href="./css/animate.css"/> -->
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dm-sans-font">
+    
+    <header>
+        <!-- header 1st -->
+        <div class="bg-[#F8F8F8]">
+            <div class="container flex gap-[470px]">
+                <!-- mob. no + email -->
+                <div>
+                    <h1 class="font-[400] text-[14px] leading-none text-[#424B5C] pt-[18px] pb-[14px]">Call Me (+55) -66 99 88<span class="text-[#F8F8F8]">99</span><span>/</span><span class="text-[#F8F8F8]">99</span>info.Glenic@gmail.com</h1>
+                </div>
+                <!-- icon + btn -->
+                <div class="flex justify-center items-center gap-[83px]">
+                    <div class="text-[#424B5CB2] font-[400] text-[16px] leading-[32px]">
+                       <a href="https://www.facebook.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-facebook-f"></i></a>
+                       <a href="https://www.instagram.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-instagram"></i></a>
+                       <a href="https://dribbble.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-dribbble"></i></a>
+                       <a href="https://www.behance.net/"><i class="fa-brands hover:text-[#6E9EFA] cursor-pointer fa-behance"></i></a>
+                    </div>
+                    <!-- button -->
+                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] border border-[#F8F8F8] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:border hover:border-[#6E9EFA] hover:p-1 hover:rounded-[10px] transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- header 2nd -->
+        <div class="container flex gap-[205px]">
+            <!-- logo + navlinks -->
+            <div class="flex gap-[99px] justify-center items-center">
+                <!-- logo -->
+                <div>
+                    <img src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
+                </div>
+                <!-- navlinks -->
+                <div class="flex justify-center items-center">
+                    <ul class="flex gap-[30px] justify-center items-center">
+                        <li class="relative group"><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300 flex justify-center items-center py-2" href="#">Home<i class="fa-solid fa-angle-down ml-1"></i></a>
+                            <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-[#6E9EFA] rounded-[10px] text-left w-[150px] hover:text-[#6E9EFA]">
+                                <li class="hover:pl-2 transition-all duration-300"><a class="font-[500] text-md" href="homepage2.html">Home Page 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300" href="#">Pages</a></li>
+                        <li><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300" href="#">Services</a></li>
+                        <li><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300" href="#">Projects</a></li>
+                        <li><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
+                        <li><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav icons -->
+            <div class="flex items-center relative">
+                <!-- search icon -->
+                <button class="flex flex-row justify-center items-center gap-2">
+                    <i id="searchIcon" class="fa-solid fa-magnifying-glass text-[#424B5C] cursor-pointer"></i>
+                    <input class="w-0 opacity-0 border border-gray-400 rounded-md p-1 transition-all duration-300 focus:w-20 focus:opacity-100" type="text" name="search" id="searchBox" placeholder="Search">
+                </button>
+                <!-- language dd-->
+                <div class="mr-[24px] ml-[29px] flex gap-4 justify-center items-center">
+                    <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">FN</h4>
+                    <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">EN</h4>
+                    <i class="group relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
+                        <ul class="hidden group-hover:block absolute top-full -left-10 bg-white rounded-[10px] border border-[#6E9EFA] w-[120px]">
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">BN 🏳</li>
+                            <hr>
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">AR 🏳</li>
+                            <hr>
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">IN 🏳</li>
+                        </ul>
+                    </i>
+                </div>
+                <!-- drawer icon -->
+                <div>
+                    <img class="cursor-pointer" id="drawerIcon" src="./assests/draweIcon.png" alt="drawerIcon">
+                     <div id="drawer" 
+                        class="overflow-y-auto hidden fixed top-0 right-0 w-[260px] h-full 
+                        bg-white shadow-lg transform translate-x-full rounded-[20px] overflow-hidden
+                        transition-transform duration-300 z-50 p-6">
+
+                        <!-- cross icon -->
+                        <button id="crossIcon" class="text-3xl cursor-pointer ml-40 mb-15">
+                            <i class="fa-solid fa-xmark hover:text-[#6E9EFA]"></i>
+                        </button>
+                    
+                        <ul class="flex flex-col gap-4 font-[700] text-[20px] text-[#424B5C]">
+                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-calendar-check mr-1"></i>Book appointment</a></li>
+                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-eye mr-2"></i>Ask for guidance</a></li>
+                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-money-bill-1 mr-2"></i>Pay</a></li>
+                            <li class="whitespace-nowrap flex items-center gap-2"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-solid fa-star-half mr-2"></i>Review</a></li>
+                        </ul>
+
+                         <div>
+                            <button class="mt-90 flex justify-center items-center gap-2 cursor-pointer bg-[#6E9EFA] text-white max-width-xl mx-auto rounded-[10px] p-2">
+                                <i class="fa-regular fa-message chat_icon"></i>
+                                Let's Chat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- banner section -->
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        const searchIcon = document.getElementById("searchIcon");
+        const searchBox = document.getElementById("searchBox");
+
+        console.log(searchBox,searchIcon)
+
+        searchIcon.addEventListener("click", (e)=>{
+            e.stopPropagation();// prevents closing immediately
+            searchBox.classList.add("w-20", "opacity-100");
+            searchBox.focus();
+            searchIcon.classList.add("hidden")
+        })
+
+        // Close when clicking outside
+        document.addEventListener("click", () => {
+            searchBox.classList.remove("w-20", "opacity-100");
+        });
+    </script>
+
+    <script>
+        const drawer = document.getElementById("drawer");
+const drawerIcon = document.getElementById("drawerIcon");
+const crossIcon = document.getElementById("crossIcon");
+
+drawerIcon.addEventListener("click", () => {
+    drawer.classList.remove("hidden");
+    drawer.classList.remove("translate-x-full");
+});
+
+crossIcon.addEventListener("click", () => {
+    drawer.classList.add("translate-x-full");
+    setTimeout(() => {
+        drawer.classList.add("hidden");
+    }, 300); // matches duration-300
+});
+
+    </script>
+</body>
+</html>
