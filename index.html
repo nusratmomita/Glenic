@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="./css/fontawesome.min.css">
 
     <!-- for video popup -->
-    <!-- <link rel="stylesheet" href="./css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
 
     <!-- swiper  -->
-    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <!-- Animate.css -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
@@ -62,7 +62,7 @@
                 <div class="flex justify-center items-center">
                     <ul class="flex gap-[30px] justify-center items-center">
                         <li class="relative group"><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300 flex justify-center items-center py-2" href="#">Home<i class="fa-solid fa-angle-down ml-1"></i></a>
-                            <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-[#6E9EFA] rounded-[10px] text-left w-[150px] hover:text-[#6E9EFA]">
+                            <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-[#6E9EFA] rounded-[10px] text-left w-[150px] hover:text-[#6E9EFA] z-4">
                                 <li class="hover:pl-2 transition-all duration-300"><a class="font-[500] text-md" href="homepage2.html">Home Page 2</a></li>
                             </ul>
                         </li>
@@ -86,7 +86,7 @@
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">FN</h4>
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">EN</h4>
                     <i class="group relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
-                        <ul class="hidden group-hover:block absolute top-full -left-10 bg-white rounded-[10px] border border-[#6E9EFA] w-[120px]">
+                        <ul class="z-4 hidden group-hover:block absolute top-full -left-10 bg-white rounded-[10px] border border-[#6E9EFA] w-[120px]">
                             <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">BN 🏳</li>
                             <hr>
                             <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">AR 🏳</li>
@@ -99,9 +99,9 @@
                 <div>
                     <img class="cursor-pointer" id="drawerIcon" src="./assests/draweIcon.png" alt="drawerIcon">
                      <div id="drawer" 
-                        class="overflow-y-auto hidden fixed top-0 right-0 w-[260px] h-full 
-                        bg-white shadow-lg transform translate-x-full rounded-[20px] overflow-hidden
-                        transition-transform duration-300 z-50 p-6">
+                        class="hidden fixed top-0 right-0 w-[260px] h-full 
+                        bg-white shadow-lg transform translate-x-full rounded-[20px] overflow-hidden border-2 border-[#6E9EFA]
+                        transition-all duration-300 z-50 p-6">
 
                         <!-- cross icon -->
                         <button id="crossIcon" class="text-3xl cursor-pointer ml-40 mb-15">
@@ -128,13 +128,203 @@
     </header>
 
     <main>
-        <!-- banner section -->
+        <!-- ! banner section -->
+        <div class="swiper mySwiper overflow-hidden">
+            <div class="swiper-wrapper overflow-hidden">
+                <!-- slide - 1 -->
+                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat overflow-hidden">
+                    <div class="container">
+                        <div class="pt-[100px] ptt-[281px] pb-[221px]">
+                            <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
+                            <h2 class="font-[500] text-[70px] leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
+                            <p class="font-[400] text-[18px] leading-[28px] text-[#424B5C] mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</p>
+                            <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
+                                <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
+                                <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
+                                <i class="fa-solid fa-arrow-right absolute right-6 top-6 text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                            </div>
+                            <!-- properties -->
+                            <div>
+                                <img class="absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
+                                <img class="absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
+                                <img class="absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
+                                <img class="absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide - 2 -->
+                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat overflow-hidden">
+                    <div class="container">
+                        <div class="pt-[100px] ptt-[281px] pb-[221px]">
+                            <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
+                            <h2 class="font-[500] text-[70px] leading-[90px] text-[#222222] halyardDisplay_font">Good Health Moves Us Forward.</h2>
+                            <p class="font-[400] text-[18px] leading-[28px] text-[#424B5C] mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</p>
+                            <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
+                                <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
+                                <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
+                                <i class="fa-solid fa-arrow-right absolute right-6 top-6 text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                            </div>
+                            <!-- properties -->
+                            <div class="">
+                                <img class="absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
+                                <img class="absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
+                                <img class="absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
+                                <img class="absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next custom-swiper-btn"></div>
+            <div class="swiper-button-prev custom-swiper-btn"></div>
+        </div>
+
+        <!-- services section -->
+        <div class=" mt-[120px]">
+            <div class="container">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/teeth.png" alt="teeth">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Dental Caring</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/medicine2.png" alt="medicine2">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Heart Caring</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/babyImg.png" alt="babyImg">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Child Emergency</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/medicine.png" alt="medicine">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Surgery Center</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/teeth.png" alt="teeth">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Dental Caring</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br> semper lacus. Donec sodales leo <br> vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/medicine2.png" alt="medicine2">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Heart Caring</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/babyImg.png" alt="babyImg">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Child Emergency</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col justify-center items-center">
+                                <img src="./assests/medicine.png" alt="medicine">
+                                <h3 class="mt-[25px] font-[400] text-[24px] leading-[36px] text-[#222222]">Surgery Center</h3>
+                                <p class="mt-[12px] font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Proin ut mi lacinia, iaculis diam ut,<br>  semper lacus. Donec sodales leo <br>  vitae justo placerat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination2 mx-140 mt-[90px]"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about us section -->
+        <!-- services section -->
+        <div class="mt-[111px] mb-200">
+            <div class="container flex gapp-[98px]">
+                <!-- left side image -->
+                <div class="w-[50%] relative">
+                    <img class="absolute right-50 -top-5 overflow-hidden z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
+                    <img class="absolute left-30 inset-0" src="./assests/patient1.png" alt="patient1">
+                    <img class="absolute top-70 right-55" src="./assests/nurse1.png" alt="nurse1">
+                    <div class="bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-80 left-80 overflow-visible">
+                        <img class="ml-2 mt-2 mb-2" src="./assests/whiteRing.png" alt="whiteRing">
+                        <h2 class="font-[500] text-[40px] text-[#FFFFFF] absolute top-10 left-8 flex flex-col justify-center items-center halyardDisplay_font ">1.5K+ <span class="font-[400] text-[14px] dm-sans-font">Visitors</span></h2>
+                    </div>
+                </div>
+                <!-- right side text -->
+                <div class="w-[50%]">
+                    <h4 class="font-[400] text-[24px] leading-[34px] text-[#6E9EFA]">10 years experience</h4>
+                    <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] halyardDisplay_font mb-[10px] mt-[4px]">We Are Best Treatment For our Hospital.</h2>
+                    <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] mb-[18px]">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
+                    <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C]">Tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
+
+                    <div class="mt-[28px] flex gap-[30px]">
+                        <div class="ww-[50%]">
+                            <div class="flex gap-[16px] items-center mb-[20px]">
+                                <img src="./assests/misssionImg.png" alt="misssionImg">
+                                <h2 class="font-[500] text-[24px] leading-none halyardDisplay_font text-[#222222]">Our Mission</h2>
+                            </div>
+                            <p class="font-[400] text-[14px] leading-[24px] text-[#424B5C]">Donec faucibus erat neque, in consectetu nisl sagittis Cras porttitor molestie.</p>
+                        </div>
+
+                        <div class="ww-[50%]">
+                            <div class="flex gap-[16px] items-center mb-[20px]">
+                                <img src="./assests/vissionImg.png" alt="vissionImg">
+                                <h2 class="font-[500] text-[24px] halyardDisplay_font text-[#222222]">Our Vision</h2>
+                            </div>
+                            <p class="font-[400] text-[14px] leading-[24px] text-[#424B5C]">Donec faucibus erat neque, in consectetu nisl sagittis Cras porttitor molestie.</p>
+                        </div>
+                    </div>
+                    <!-- About More btn + video play-->
+                    <div class="flex gap-[10px] items-center">
+                        <div class="group relative border border-[#2222221A] bg-gray-100 mt-[40px] rounded-[40px] w-[221px] h-[60px] flex hover:bg-[#222222] cursor-pointer transition-all duration-300">
+                            <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">About More</button>
+                            <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="bookCircle">
+                            <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="whiteAboutCircle">
+                            <i class="fa-solid fa-arrow-right absolute right-6 top-[22px] text-[#ffffff] group-hover:text-[#222222]"></i>
+                        </div>
+                        
+                        <div class="relative cursor-pointer mt-10" >
+                            <a 
+                                href="https://www.youtube.com/watch?v=nMfPqeZjc2c" 
+                                class="video-popup cursor-pointer"
+                            >
+                                <img src="./assests/bookCircle.png" alt="bookCircle">
+                                <i><i class="absolute top-[22px] left-[19px] fa-solid fa-play text-white"></i></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
 
     </footer>
 
+    <!-- for search box -->
     <script>
         const searchIcon = document.getElementById("searchIcon");
         const searchBox = document.getElementById("searchBox");
@@ -154,23 +344,77 @@
         });
     </script>
 
+    <!-- for header drawer -->
     <script>
         const drawer = document.getElementById("drawer");
-const drawerIcon = document.getElementById("drawerIcon");
-const crossIcon = document.getElementById("crossIcon");
+        const drawerIcon = document.getElementById("drawerIcon");
+        const crossIcon = document.getElementById("crossIcon");
 
-drawerIcon.addEventListener("click", () => {
-    drawer.classList.remove("hidden");
-    drawer.classList.remove("translate-x-full");
-});
+        drawerIcon.addEventListener("click", () => {
+            drawer.classList.remove("hidden");
+            drawer.classList.remove("translate-x-full");
+        });
 
-crossIcon.addEventListener("click", () => {
-    drawer.classList.add("translate-x-full");
-    setTimeout(() => {
-        drawer.classList.add("hidden");
-    }, 300); // matches duration-300
-});
+        crossIcon.addEventListener("click", () => {
+            drawer.classList.add("translate-x-full");
+            setTimeout(() => {
+                drawer.classList.add("hidden");
+            }, 300);
+        });
+    </script>
 
+    <!-- for banner slider -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        });
+    </script>
+
+    <!-- for service slider -->
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        slidesPerView: 4,
+        pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+        },
+        });
+    </script>
+    
+    <!-- for video popup -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.video-popup').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    patterns: {
+                        youtube: {
+                            index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                            id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                            // Or null - full URL will be returned
+                            // Or a function that should return %id%, for example:
+                            // id: function(url) { return 'parsed id'; }
+
+                            src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                            },
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
