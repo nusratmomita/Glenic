@@ -259,8 +259,7 @@
         </div>
 
         <!-- about us section -->
-        <!-- services section -->
-        <div class="mt-[111px] mb-200">
+        <div class="mt-[111px]">
             <div class="container flex gapp-[98px]">
                 <!-- left side image -->
                 <div class="w-[50%] relative">
@@ -318,6 +317,439 @@
                 </div>
             </div>
         </div>
+
+        <!-- about glenic text -->
+        <div class="pt-[75px] mr-[91px]">
+           <img src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
+        </div>
+
+        <!-- doctor check up section-->
+        <div class="mt-[100px] relative">
+            <div class="bg-[url('./assests/doctorCheckUpBG.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center pt-[96px]">
+                <div>
+                    <h3 class="font-[400] text-[24px] leading-[64px] text-[#6E9EFA] text-center">Need a Doctor for Check-up?</h3>
+                    <h2 class="font-[500] text-[50px] leading-[64px] text-[#FFFFFF] text-center halyardDisplay_font">We provide the best medical services <br> for you and your family.</h2>
+                </div>
+                <!-- book appoint. btn -->
+                <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mb-[120px]">
+                    <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">get Appointment</button>
+                    <img class="ml-[36px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
+                    <img class="ml-[36px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
+                    <i class="fa-solid fa-arrow-right absolute right-[19px] top-6 text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                </div>
+
+                <!-- properties -->
+                <img class="hidden lg:block absolute left-[63px] top-[165px]" src="./assests/pinkHalfCircle.png" alt="pinkHalfCircle">
+                <img class="hidden lg:block absolute left-[427px] top-[242px]" src="./assests/blueWhite.png" alt="blueWhite">
+                <img class="hidden lg:block absolute left-[1086px] top-[22px]" src="./assests/pinkCircle.png" alt="pinkCircle">
+                <img class="hidden lg:block absolute left-[1016px] top-[389px]" src="./assests/blueCircle.png" alt="blueCircle">
+            </div>
+        </div>
+
+        <!-- case stduy section-->
+        <div class="mt-[95px]">
+            <!-- text and btn section -->
+            <div>
+                <div class="container flex gap-[200px] items-end">
+                    <div>
+                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Recent Projects</h3>
+                        <h2 class="font-[500] text-[50px] leading-[24px] text-[#222222] mt-[23px] halyardDisplay_font">Our case study</h2>
+                    </div>
+                    <div class="mt-15 flex gap-[91px]">
+                        <div class="mt-25 tab">
+                            <button onclick="openSpecialist(event, 0)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">All</button>
+                            <button onclick="openSpecialist(event, 1)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Neurologists</button>
+                            <button onclick="openSpecialist(event, 2)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Orthopedic</button>
+                            <button onclick="openSpecialist(event, 3)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">COVID-19</button>
+                        </div>
+                        <div class="flex mt-15">
+                            <div>
+                                <img id="leftArrow" class="swiper-pagination3 cursor-pointer" src="./assests/leftSliderArrow.png" alt="leftSliderArrow">
+                            </div>
+                            <div>
+                                <img id="rightArrow" class="ml-[10px] swiper-pagination3 cursor-pointer" src="./assests/rightSliderArrow.png" alt="rightSliderArrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card section -->
+            <div class="mt-[50px]">
+                <div class="container">
+                    <div class="swiper my-director-slider">
+                        <div class="swiper-wrapper">
+                            <!-- slide 1(all) -->
+                            <div class="swiper-slide">
+                                <div id="all" class="tabcontent flex gap-[30px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- slide 2(Neurologists) -->
+                            <div class="swiper-slide">
+                                <div id="neurologists" class="tabcontent flex gap-[30px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- slide 3(Orthopedic) -->
+                            <div class="swiper-slide">
+                                <div id="orthopedic" class="neurologists flex gap-[30px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                            <!-- slide 4(COVID-19) -->
+                            <div class="swiper-slide">
+                                <div id="covid-19" class="tabcontent flex gap-[30px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <div class="pl-[29px] mt-[25px]">
+                                                <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
+                                                <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
+                                                <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] whitespace-nowrap">These doctors imaging, including X-rays.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination3 mt-[60px] flex justify-center items-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- emergency section-->
+        <div class="mt-[155px]">
+            <div class="container relative flex flex-col lg:flex-row gap-[124px]">
+                <!-- left side images -->
+                <div>
+                    <img src="./assests/doctorandPatient.png" alt="doctorandPatient">
+                    <img class="absolute bottom-[50px] left-[50px]" src="./assests/squareLine.png" alt="squareLine">
+                    <img class="absolute -top-[45px] right-180" src="./assests/blueRectangle.png" alt="blueRectangle">
+                </div>
+                <!-- right side text -->
+                <div class="-mt-15">
+                    <div>
+                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Emergency Helpline</h3>
+                        <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] mt-[4px] halyardDisplay_font">Need Emergency Contact?</h2>
+                        <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] mt-[12px]">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer <br> tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et <br> orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
+                    </div>
+                    <div class="mt-[16px] flex gap-[20px] items-center">
+                        <div class="bg-[#6E9EFA] w-[4px] h-[12px] rounded-[3px] mt-2"></div>
+                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#222222] halyardDisplay_font">24/7 Contact Our Hospital.</h3>
+                    </div>
+                    <div class="mt-[16px] flex gap-[20px] items-center">
+                        <div class="bg-[#6E9EFA] w-[4px] h-[12px] rounded-[3px] mt-2"></div>
+                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#222222] halyardDisplay_font">Emergency Contact Our Phone Number.</h3>
+                    </div>
+                    <!-- no. & email -->
+                    <div class="mt-[41px] flex gap-[30px]">
+                        <!-- no. -->
+                        <div class="rounded-[5px] border-t border-[#6E9EFA1A]  flex gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
+                            <!-- icon -->
+                            <div class="bg-[#6E9EFA] w-[40px] h-[40px] rounded-[50px]">
+                                <i class="fa-solid fa-phone text-white p-[11px] "></i>
+                            </div>
+                            <div>
+                                <h3 class="font-[400] text-[14px] leading-[24px] text-[#424B5C]">Phone Number</h3>
+                                <h5 class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] halyardDisplay_font">(1)245-45678 call</h5>
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="rounded-[5px] border-t border-[#6E9EFA1A] flex gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
+                            <!-- icon -->
+                            <div class="bg-[#6E9EFA] w-[40px] h-[40px] rounded-[50px]">
+                                <i class="fa-regular fa-envelope text-white p-[12px] "></i>
+                            </div>
+                            <div>
+                                <h3 class="font-[400] text-[14px] leading-[24px] text-[#424B5C]">Quick You Email!</h3>
+                                <h5 class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] halyardDisplay_font">Help.info@gmail.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- review section-->
+        <div class="mt-[120px] mb-200 bg-[#F8F8F8]">
+            <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
+                <div>
+                    <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
+                    <h3 class="font-[500] text-[50px] leading-[24px] text-[#222222] mt-[22px] halyardDisplay_font">What clients Say?</h3>
+                </div>
+                <!-- review card -->
+                <div class="mt-[57px] w-full">
+                    <div class="swiper review_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div class="z-999 ">
+                                            <img class="-mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="z-999 fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div>
+                                            <img class="-mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                           <div class="swiper-slide">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div>
+                                            <img class="-mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide debugg">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div>
+                                            <img class="z-999 -mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="z-999 fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div>
+                                            <img class="-mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                           <div class="swiper-slide">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                    <!-- img + postion -->
+                                    <div class="ml-[50px] flex gap-[16px] relative">
+                                        <!-- image -->
+                                        <div>
+                                            <img class="-mt-5 border-2 border-[#6E9EFA] rounded-[50%] object-cover w-[100px] h-[100px] p-[7px]" src="./assests/doctorImgReview.jpg" alt="doctorImgReview">
+                                            <div class="absolute -top-4 left-[5px] bg-[#6E9EFA] w-[30px] h-[30px] rounded-[50%] flex justify-center items-center">
+                                                <i class="fa-solid fa-quote-left text-[#ffffff] mt-[8px] pt-[2px] pb-[2px] w-[14px] h-[27px]"></i>
+                                            </div>
+                                        </div>
+                                        <!-- name + position -->
+                                        <div>
+                                            <h3 class="mt-[20px] font-[500] text-[20px] text-[#222222] halyardDisplay_font">Jems Bonrnli Era</h3>
+                                            <h4 class="font-[400] text-[14px] text-[#6E9EFA]">Glenic CEO</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-[20px] pl-[49px] pr-[51px]">
+                                        <p class="font-[400] text-[18px] leading-[32px] text-[#424B5C]">Nullam cursus lacus insr veneni atis estas. Fusceri libero lorem, vehicul ege sapien id, faucibus vulp. Donec ut urna.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination mt-[45px] flex justify-center items-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -329,7 +761,7 @@
         const searchIcon = document.getElementById("searchIcon");
         const searchBox = document.getElementById("searchBox");
 
-        console.log(searchBox,searchIcon)
+        // console.log(searchBox,searchIcon)
 
         searchIcon.addEventListener("click", (e)=>{
             e.stopPropagation();// prevents closing immediately
@@ -416,5 +848,8 @@
             });
         });
     </script>
+
+    <!-- for tabs -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
