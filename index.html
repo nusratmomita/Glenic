@@ -129,10 +129,10 @@
 
     <main>
         <!-- ! banner section -->
-        <div class="swiper mySwiper overflow-hidden">
-            <div class="swiper-wrapper overflow-hidden">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
                 <!-- slide - 1 -->
-                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat overflow-hidden">
+                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat">
                     <div class="container">
                         <div class="pt-[100px] ptt-[281px] pb-[221px]">
                             <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
@@ -299,9 +299,9 @@
                     <div class="flex gap-[10px] items-center">
                         <div class="group relative border border-[#2222221A] bg-gray-100 mt-[40px] rounded-[40px] w-[221px] h-[60px] flex hover:bg-[#222222] cursor-pointer transition-all duration-300">
                             <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">About More</button>
-                            <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="bookCircle">
-                            <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="whiteAboutCircle">
-                            <i class="fa-solid fa-arrow-right absolute right-6 top-[22px] text-[#ffffff] group-hover:text-[#222222]"></i>
+                            <img class="ml-[27px] py-1 pr-1 group-hover:hidden object-cover" src="./assests/blackCircle.png" alt="bookCircle">
+                            <img class="ml-[27px] py-1 pr-1 hidden group-hover:block object-cover" src="./assests/whiteAboutCircle.png" alt="whiteAboutCircle">
+                            <i class="fa-solid fa-arrow-right absolute right-[17px] top-[22px] text-[#ffffff] group-hover:text-[#222222]"></i>
                         </div>
                         
                         <div class="relative cursor-pointer mt-10" >
@@ -590,8 +590,8 @@
             </div>
         </div>
 
-        <!-- review section-->
-        <div class="mt-[120px] mb-200 bg-[#F8F8F8]">
+        <!-- ! review section-->
+        <div class="mt-[120px] bg-[#F8F8F8]">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
@@ -750,11 +750,257 @@
                 </div>
             </div>
         </div>
+
+        <!-- why choose us section -->
+        <div class="mt-[111px]">
+            <div class="container">
+                <!-- 1st row -> text + imgs -->
+                <div class="flex gap-[100px]">
+                    <div>
+                        <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] mb-1">Why Choose Us</h4>
+                        <h2 class="font-[500] text-[50px] leading-[60px] text-[#222222] halyardDisplay_font">Trusted by 10 Lakh <br> Customers across 36k+ <br> Visitors hospital.</h2>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature1.png" alt="Feature1">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature1.png" alt="hoveredFeature1">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Friendly Environment</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature2.png" alt="Feature2">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature2.png" alt="hoveredFeature2">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Medical & Health</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-[30px] mt-[30px]">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature3.png" alt="Feature3">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature3.png" alt="hoveredFeature3">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">24/7 Emergency</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature4.png" alt="Feature4">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature4.png" alt="hoveredFeature4">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Quality Treatment</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature5.png" alt="Feature5">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature5.png" alt="hoveredFeature5">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Modern Equipment</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                            <img class="group-hover:hidden block" src="./assests/Feature6.png" alt="Feature6">
+                            <img class="hidden group-hover:block" src="./assests/hoveredFeature6.png" alt="hoveredFeature6">
+                            <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Exclusive Supports</h3>
+                            <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- blog section -->
+        <div class="mt-[111px]">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
+                    <h2 class="font-[500] text-[50px] leading-[24px] text-[#222222] halyardDisplay_font">Latest News & Blogs</h2>
+                </div>
+                <div class="mt-[57px] flex gap-[30px] flex-col lg:flex-row">
+                    <!-- blog 1 -->
+                    <div class="bg-[#FFFFFF] shadow-lg shadow-[#0000000D] w-[370px] h-[560px] rounded-[10px]">
+                        <img src="./assests/caseStudy1.png" alt="caseStudy1">
+                        <div class="mt-[27px] ml-[29px]">
+                            <div>
+                                <h5 class="font-[400] text-[14px] leading-[16x] text-[#424B5C]">by <span class="text-[#6E9EFA]">Creativemela</span> <span class="text-white">aa</span><span class="text-[#2222221A]">I</span><span class="text-white">aa</span>22 Aug 2023</h5>
+                                <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
+                            </div>
+                            <!-- read more btn -->
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
+                                <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
+                                <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
+                                <i class="fa-solid fa-arrow-right absolute right-[18px] top-[24px] text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blog 2 -->
+                    <div class="bg-[#FFFFFF] shadow-lg shadow-[#0000000D] w-[370px] h-[560px] rounded-[10px]">
+                        <img src="./assests/caseStudy1.png" alt="caseStudy1">
+                        <div class="mt-[27px] ml-[29px]">
+                            <div>
+                                <h5 class="font-[400] text-[14px] leading-[16x] text-[#424B5C]">by <span class="text-[#6E9EFA]">Creativemela</span> <span class="text-white">aa</span><span class="text-[#2222221A]">I</span><span class="text-white">aa</span>22 Aug 2023</h5>
+                                <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
+                            </div>
+                            <!-- read more btn -->
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
+                                <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
+                                <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
+                                <i class="fa-solid fa-arrow-right absolute right-[18px] top-[24px] text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blog 3 -->
+                    <div class="bg-[#FFFFFF] shadow-lg shadow-[#0000000D] w-[370px] h-[560px] rounded-[10px]">
+                        <img src="./assests/caseStudy1.png" alt="caseStudy1">
+                        <div class="mt-[27px] ml-[29px]">
+                            <div>
+                                <h5 class="font-[400] text-[14px] leading-[16x] text-[#424B5C]">by <span class="text-[#6E9EFA]">Creativemela</span> <span class="text-white">aa</span><span class="text-[#2222221A]">I</span><span class="text-white">aa</span>22 Aug 2023</h5>
+                                <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
+                            </div>
+                            <!-- read more btn -->
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
+                                <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
+                                <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
+                                <i class="fa-solid fa-arrow-right absolute right-[18px] top-[24px] text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- company slider section -->
     </main>
 
-    <footer>
+    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+        <div class="container">
+            <!-- newletter section -->
+            <div class="pt-[111px] flex gap-[102px]">
+                <div>
+                    <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Get Newsletter Glenic</h4>
+                    <h2 class="font-[500] text-[50px] leading-[56px] text-[#FFFFFF] mt-[7px] halyardDisplay_font">I'll Help You Get <br> Back to Newsletter</h2>
+                </div>
+                <div class="mt-15 border border-[#FFFFFF1A] rounded-[50px] w-[670px] h-[95px] flex items-center justify-between focus-within:border-[#6E9EFA] transition-colors duration-300">
 
+                    <input type="email" placeholder="Enter Your Newsletter..." class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
+
+                    <div class="relative flex items-center pr-3">
+                        <img src="./assests/footerBlueCircle.png" alt="">
+                        <i class="fa-solid fa-arrow-right absolute bottom-8 left-7 text-white"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-[53px]">
+                <hr class="h-[4px] bg-[#FFFFFF12] border-0"/>
+            </div>
+            <!-- logo + links -->
+            <div class="mt-[95px] pb-[107px]  flex">
+                <div>
+                    <img src="./assests/whiteLogo.png" alt="whiteLogo">
+                    <h3 class="mt-[14px] font-[400] text-[18px] text-[#FFFFFF99]">In velit arcu posuere integer. Dolor sit am, <br> consectetur nun adipiscing elit.</h3>
+                    <ul class="flex gap-[30px] justify-start items-center mt-[50px]">
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#6E9EFA] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#6E9EFA] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#FFFFFF0D] hover:bg-[#6E9EFA] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                    </ul>
+                </div>
+                <div class="ml-[85px]">
+                    <div>
+                        <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font">Quick Links</h3>
+                        <ul class="list-none mt-5">
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Home</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300"href="#">About us</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Services</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Portfolios</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Blogs</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-[85px]">
+                    <div>
+                        <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font">Service links</h3>
+                        <ul class="list-none mt-5">
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Vaccination</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300"href="#">Home visit</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Home visit</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Diagnostics</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Gynecology</a>
+                            </li>
+                            <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Immunology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-[48px]">
+                    <div>
+                        <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font mb-[7px]">Contact info</h3>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-[#FFFFFF99]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#FFFFFF99]">#22-00  Locust Chicago, Illinois</h4>
+                        </div>
+                        <h4 class="ml-6 font-[400] text-[16px] text-[#FFFFFF99]">#66-22 Los Angeles, California</h4>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-[#FFFFFF99]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#FFFFFF99]">(+66)-233-666-555</h4>
+                        </div>
+                        <h4 class="ml-7 font-[400] text-[16px] text-[#FFFFFF99]">(+99)-222-455-4444</h4>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-[#FFFFFF99]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#FFFFFF99]">contactinfo@Zaviagmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- footer copy right section -->
+    <div class="bg-[#1F1F1F]">
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+            <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
+        </div>
+    </div>
 
     <!-- for search box -->
     <script>
