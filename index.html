@@ -238,7 +238,7 @@
         </div>
 
         <!-- services section -->
-        <div class="hidden  mt-[120px]">
+        <div class="mt-[10px] lg:mt-[120px]">
             <div class="container">
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
@@ -306,8 +306,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="swiper-pagination2 mx-140 mt-[90px]"></div>
+                    <div class="swiper-pagination2 mx-30 lg:mx-140 mt-[25px] lg:mt-[90px]"></div>
                 </div>
             </div>
         </div>
@@ -1157,6 +1156,12 @@
             el: ".swiper-pagination2",
             clickable: true,
         },
+        breakpoints: {
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 }, 
+        }
         });
     </script>
     
