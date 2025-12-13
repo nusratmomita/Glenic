@@ -32,26 +32,26 @@
     <header>
         <!-- header 1st -->
         <div class="bg-[#F8F8F8]">
-            <div class="container flex gap-[470px]">
+            <div class="container flex lg:gap-[470px] gap-[35px]">
                 <!-- mob. no + email -->
                 <div>
-                    <h1 class="font-[400] text-[14px] leading-none text-[#424B5C] pt-[18px] pb-[14px]">Call Me (+55) -66 99 88<span class="text-[#F8F8F8]">99</span><span>/</span><span class="text-[#F8F8F8]">99</span>info.Glenic@gmail.com</h1>
+                    <h1 class="font-[400] text-[14px] leading-none text-[#424B5C] pt-[18px] pb-[14px] px-4 lg:px-0">Call Me (+55) -66 99 88<span class="text-[#F8F8F8]">99</span><span>/</span><span class="text-[#F8F8F8] ">99</span>info.Glenic@gmail.com</h1>
                 </div>
                 <!-- icon + btn -->
                 <div class="flex justify-center items-center gap-[83px]">
-                    <div class="text-[#424B5CB2] font-[400] text-[16px] leading-[32px]">
+                    <div class="hidden lg:block text-[#424B5CB2] font-[400] text-[16px] leading-[32px]">
                        <a href="https://www.facebook.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-facebook-f"></i></a>
                        <a href="https://www.instagram.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-instagram"></i></a>
                        <a href="https://dribbble.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-dribbble"></i></a>
                        <a href="https://www.behance.net/"><i class="fa-brands hover:text-[#6E9EFA] cursor-pointer fa-behance"></i></a>
                     </div>
                     <!-- button -->
-                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] border border-[#F8F8F8] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:border hover:border-[#6E9EFA] hover:p-1 hover:rounded-[10px] transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
+                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] border border-[#F8F8F8] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:border hover:border-[#6E9EFA] hover:p-1 hover:rounded-[10px] whitespace-nowrap transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
                 </div>
             </div>
         </div>
         <!-- header 2nd -->
-        <div class="container flex gap-[205px]">
+        <div class="hidden container flex gap-[205px]">
             <!-- logo + navlinks -->
             <div class="flex gap-[99px] justify-center items-center">
                 <!-- logo -->
@@ -59,7 +59,7 @@
                     <img src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
                 </div>
                 <!-- navlinks -->
-                <div class="flex justify-center items-center">
+                <div class="hidden lg:block flex justify-center items-center">
                     <ul class="flex gap-[30px] justify-center items-center">
                         <li class="relative group"><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300 flex justify-center items-center py-2" href="#">Home<i class="fa-solid fa-angle-down ml-1"></i></a>
                             <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-[#6E9EFA] rounded-[10px] text-left w-[150px] hover:text-[#6E9EFA] z-4">
@@ -127,7 +127,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="hidden ">
         <!-- ! banner section -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -146,10 +146,10 @@
                             </div>
                             <!-- properties -->
                             <div>
-                                <img class="absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
-                                <img class="absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
-                                <img class="absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
-                                <img class="absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
+                                <img class="hidden lg:block absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
+                                <img class="hidden lg:block absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
                             </div>
                         </div>
                     </div>
@@ -381,9 +381,12 @@
                             <!-- slide 1(all) -->
                             <div class="swiper-slide">
                                 <div id="all" class="tabcontent flex gap-[30px]">
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
@@ -392,9 +395,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <img class="object-cover relative" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
@@ -403,9 +409,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
@@ -419,9 +428,12 @@
                             <!-- slide 2(Neurologists) -->
                             <div class="swiper-slide">
                                 <div id="neurologists" class="tabcontent flex gap-[30px]">
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
@@ -430,9 +442,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <img class="object-cover relative" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
@@ -441,9 +456,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
@@ -457,9 +475,12 @@
                             <!-- slide 3(Orthopedic) -->
                             <div class="swiper-slide">
                                 <div id="orthopedic" class="neurologists flex gap-[30px]">
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
@@ -468,9 +489,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer" >
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <img class="object-cover relative" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
@@ -479,9 +503,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
@@ -496,9 +523,12 @@
                             <!-- slide 4(COVID-19) -->
                             <div class="swiper-slide">
                                 <div id="covid-19" class="tabcontent flex gap-[30px]">
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                        <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
+                                        <div class="relative overflow-hidden shadow-lg mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                            <img class="object-cover " src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Cellulitis, influenza</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Anxiety in children</h3>
@@ -507,9 +537,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer">
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <img class="object-cover relative" src="./assests/caseStudy2.png" alt="caseStudy2">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">tuberculosis, HIV</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Alcohol liver disease</h3>
@@ -518,9 +551,12 @@
                                         </div>
                                     </div>
     
-                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
+                                    <div class="bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px] group cursor-pointer" >
                                         <div class="shadow-lg bg-[#FFFFFF] mb-[17px] w-[370px] h-[410px] rounded-[10px]">
-                                            <img class="object-cover" src="./assests/caseStudy3.png" alt="caseStudy3">
+                                            <img class="object-cover relative" src="./assests/caseStudy1.png" alt="caseStudy1">
+                                            <div class="absolute top-25 left-38 hidden group-hover:block transition-all duration-300">
+                                                <img src="./assests/readMoreIcon.png" alt="readMoreIcon">
+                                            </div>
                                             <div class="pl-[29px] mt-[25px]">
                                                 <h3 class="font-[400] text-[16px] text-[#6E9EFA]">Parasite Infections</h3>
                                                 <h3 class="font-[500] text-[24px] leading-[48px] text-[#222222] halyardDisplay_font -mt-3">Lymp venereum (LGV)</h3>
@@ -872,7 +908,7 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+    <footer class="hidden  mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
         <div class="container">
             <!-- newletter section -->
             <div class="pt-[111px] flex gap-[102px]">
@@ -996,7 +1032,7 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="bg-[#1F1F1F]">
+    <div class="hidden  bg-[#1F1F1F]">
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
