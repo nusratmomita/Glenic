@@ -1,3 +1,26 @@
+const drawer = document.getElementById("mobileDrawer");
+const drawerIcon = document.getElementById("drawerIcon");
+const closeIcon = document.getElementById("mobileClose");
+const overlay = document.getElementById("overlay");
+
+// OPEN drawer
+drawerIcon.addEventListener("click", () => {
+    drawer.classLook.remove("-translate-x-full");
+    overlay.classList.remove("hidden");
+});
+
+// CLOSE drawer (X icon)
+closeIcon.addEventListener("click", () => {
+    drawer.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+});
+
+// CLOSE drawer (overlay click)
+overlay.addEventListener("click", () => {
+    drawer.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+});
+
 // for case study
 var swiper = new Swiper(".my-director-slider", {
     slidesPerView: 1,

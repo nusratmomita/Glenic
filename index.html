@@ -51,12 +51,16 @@
             </div>
         </div>
         <!-- header 2nd -->
-        <div class="hidden container flex gap-[205px]">
+        <div class="container flex gap-[205px]">
+
+            <!-- to blur the bg -->
+            <div id="overlay" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+
             <!-- logo + navlinks -->
-            <div class="flex gap-[99px] justify-center items-center">
+            <div class="flex lg:gap-[99px] justify-center items-center">
                 <!-- logo -->
                 <div>
-                    <img src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
+                    <img class="px-4 lg:px-0" src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
                 </div>
                 <!-- navlinks -->
                 <div class="hidden lg:block flex justify-center items-center">
@@ -77,12 +81,12 @@
             <!-- nav icons -->
             <div class="flex items-center relative">
                 <!-- search icon -->
-                <button class="flex flex-row justify-center items-center gap-2">
+                <button class="hidden lg:block flex flex-row justify-center items-center gap-2">
                     <i id="searchIcon" class="fa-solid fa-magnifying-glass text-[#424B5C] cursor-pointer"></i>
                     <input class="w-0 opacity-0 border border-gray-400 rounded-md p-1 transition-all duration-300 focus:w-20 focus:opacity-100" type="text" name="search" id="searchBox" placeholder="Search">
                 </button>
                 <!-- language dd-->
-                <div class="mr-[24px] ml-[29px] flex gap-4 justify-center items-center">
+                <div class="hidden mr-[24px] ml-[29px] lg:flex gap-4 justify-center items-center">
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">FN</h4>
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">EN</h4>
                     <i class="group relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
@@ -114,20 +118,68 @@
                             <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-money-bill-1 mr-2"></i>Pay</a></li>
                             <li class="whitespace-nowrap flex items-center gap-2"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-solid fa-star-half mr-2"></i>Review</a></li>
                         </ul>
-
-                         <div>
-                            <button class="mt-90 flex justify-center items-center gap-2 cursor-pointer bg-[#6E9EFA] text-white max-width-xl mx-auto rounded-[10px] p-2">
-                                <i class="fa-regular fa-message chat_icon"></i>
-                                Let's Chat
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- small screen -->
+        <div id="mobileDrawer"
+            class="fixed top-0 left-0 w-[280px] h-full bg-white shadow-lg 
+                    transform -translate-x-full transition-transform duration-300 
+                    z-50 p-6 lg:hidden overflow-y-auto">
+
+            <div class="flex justify-between items-center mb-4">
+                <img class="w-[110px]" src="./assests/glenicBlackLogo.png" alt="logo">
+                <button id="mobileClose" class="text-2xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <hr class="my-4">
+
+            <ul class="flex flex-col gap-4 font-[500] text-[#424B5C]">
+                <li><a class="hover:text-[#6E9EFA]" href="#">Home</a></li>
+                <li><a class="hover:text-[#6E9EFA]" href="#">Pages</a></li>
+                <li><a class="hover:text-[#6E9EFA]" href="#">Services</a></li>
+                <li><a class="hover:text-[#6E9EFA]" href="#">Projects</a></li>
+                <li><a class="hover:text-[#6E9EFA]" href="#">Blog</a></li>
+                <li><a class="hover:text-[#6E9EFA]" href="#">Contact</a></li>
+            </ul>
+
+            <hr class="my-6">
+
+            <ul class="flex flex-col gap-4 font-[600] text-[#424B5C]">
+                <li>
+                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Book Appointment
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
+                        <i class="fa-regular fa-eye"></i>
+                        Ask for Guidance
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        Pay
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
+                        <i class="fa-solid fa-star-half"></i>
+                        Review
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </header>
 
-    <main class="hidden ">
+    <main>
         <!-- ! banner section -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -135,10 +187,10 @@
                 <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat">
                     <div class="container">
                         <div class="pt-[100px] ptt-[281px] pb-[221px]">
-                            <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
-                            <h2 class="font-[500] text-[70px] leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
-                            <p class="font-[400] text-[18px] leading-[28px] text-[#424B5C] mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</p>
-                            <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
+                            <h2 class="text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
+                            <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br class="hidden lg:block"> tellus massa. Nullam bibendum sodales est in faucibus.</p>
+                            <div class="mx-10 lg:mx-0 group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
                                 <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
                                 <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
@@ -184,7 +236,7 @@
         </div>
 
         <!-- services section -->
-        <div class=" mt-[120px]">
+        <div class="hidden  mt-[120px]">
             <div class="container">
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
@@ -259,7 +311,7 @@
         </div>
 
         <!-- about us section -->
-        <div class="mt-[111px]">
+        <div class="hidden mt-[111px]">
             <div class="container flex gapp-[98px]">
                 <!-- left side image -->
                 <div class="w-[50%] relative">
@@ -319,12 +371,12 @@
         </div>
 
         <!-- about glenic text -->
-        <div class="pt-[75px] mr-[91px]">
+        <div class="hidden pt-[75px] mr-[91px]">
            <img src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
         </div>
 
         <!-- doctor check up section-->
-        <div class="mt-[100px] relative">
+        <div class="hidden mt-[100px] relative">
             <div class="bg-[url('./assests/doctorCheckUpBG.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center pt-[96px]">
                 <div>
                     <h3 class="font-[400] text-[24px] leading-[64px] text-[#6E9EFA] text-center">Need a Doctor for Check-up?</h3>
@@ -347,7 +399,7 @@
         </div>
 
         <!-- case stduy section-->
-        <div class="mt-[95px]">
+        <div class="hidden mt-[95px]">
             <!-- text and btn section -->
             <div>
                 <div class="container flex gap-[200px] items-end">
@@ -574,7 +626,7 @@
         </div>
 
         <!-- emergency section-->
-        <div class="mt-[155px]">
+        <div class="hidden mt-[155px]">
             <div class="container relative flex flex-col lg:flex-row gap-[124px]">
                 <!-- left side images -->
                 <div>
@@ -627,7 +679,7 @@
         </div>
 
         <!-- ! review section-->
-        <div class="mt-[120px] bg-[#F8F8F8]">
+        <div class="hidden mt-[120px] bg-[#F8F8F8]">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
@@ -788,7 +840,7 @@
         </div>
 
         <!-- why choose us section -->
-        <div class="mt-[111px]">
+        <div class="hidden mt-[111px]">
             <div class="container">
                 <!-- 1st row -> text + imgs -->
                 <div class="flex gap-[100px]">
@@ -841,7 +893,7 @@
         </div>
 
         <!-- blog section -->
-        <div class="mt-[111px]">
+        <div class="hidden mt-[111px]">
             <div class="container">
                 <div class="text-center">
                     <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
