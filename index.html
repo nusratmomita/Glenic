@@ -94,7 +94,7 @@
             <!-- nav icons -->
             <div class="flex items-center relative">
                 <!-- search icon -->
-                <button class="hidden lg:block flex flex-row justify-center items-center gap-2">
+                <button class="hidden lg:flex flex-row justify-center items-center gap-2">
                     <i id="searchIcon" class="fa-solid fa-magnifying-glass text-[#424B5C] cursor-pointer"></i>
                     <input class="w-0 opacity-0 border border-gray-400 rounded-md p-1 transition-all duration-300 focus:w-20 focus:opacity-100" type="text" name="search" id="searchBox" placeholder="Search">
                 </button>
@@ -192,17 +192,17 @@
 
     </header>
 
-    <main>
+    <main >
         <!-- ! banner section -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <!-- slide - 1 -->
-                <div class="swiper-slide bg-[url('./assests/bannerImg.png')] bg-cover bg-no-repeat">
-                    <div class="container">
-                        <div class="pt-[100px] ptt-[281px] pb-[221px]">
-                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
-                            <h2 class="text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
-                            <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br class="hidden lg:block"> tellus massa. Nullam bibendum sodales est in faucibus.</p>
+                <div class="swiper-slide">
+                    <div class="container flex flex-col lg:flex-row gap-[130px] items-stretch relative">
+                        <div class="pt-[100px] pb-[221px] w-[40%]">
+                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA] whitespace-nowrap">Hi, It’s our Glenic</h4>
+                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
+                            <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
                             <div class="flex justify-center items-center lg:block">
                                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
                                     <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
@@ -213,35 +213,54 @@
                             </div>
                             <!-- properties -->
                             <div>
-                                <img class="hidden lg:block absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
-                                <img class="hidden lg:block absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
-                                <img class="hidden lg:block absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
-                                <img class="hidden lg:block absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
+                                <!-- <img class="w-100 h-100 hidden lg:block absolute -top-[80px] left-[200px]" src="./assests/pinkFullCircle.png" alt="pinkFullCircle"> -->
+                                <img class="hidden lg:block absolute top-[600px] left-[600px] z-999 animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[155px] -left-[130px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[73px] left-[330px] animate-bounce"src="./assests/bulb.png" alt="bulb">
+                                <img class="hidden lg:block absolute top-[30px] left-[450px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
                             </div>
+                        </div>
+
+                        <div class="w-[60%] relative">
+                            <img 
+                                class="w-full h-full object-cover"
+                                src="./assests/bannerImg.png" 
+                                alt=""
+                            >
                         </div>
                     </div>
                 </div>
 
                 <!-- slide - 2 -->
-                <div class="swiper-slide bg-[url('./assests/bannerImg.png')] bg-cover bg-no-repeat overflow-hidden">
-                    <div class="container">
-                        <div class="pt-[100px] ptt-[281px] pb-[221px]">
-                            <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
-                            <h2 class="font-[500] text-[70px] leading-[90px] text-[#222222] halyardDisplay_font">Good Health Moves Us Forward.</h2>
-                            <p class="font-[400] text-[18px] leading-[28px] text-[#424B5C] mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed <br> tellus massa. Nullam bibendum sodales est in faucibus.</p>
-                            <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
-                                <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
-                                <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
-                                <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
-                                <i class="fa-solid fa-arrow-right absolute right-6 top-6 text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                <div class="swiper-slide">
+                    <div class="container flex flex-col lg:flex-row gap-[130px] items-stretch relative">
+                        <div class="pt-[100px] pb-[221px] w-[40%]">
+                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA] whitespace-nowrap">Hi, It’s our Glenic</h4>
+                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Good Health Moves Us Forward.</h2>
+                            <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
+                            <div class="flex justify-center items-center lg:block">
+                                <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                                    <button class="font-[500] text-[16px] leading-[24px] text-[#6E9EFA] uppercase py-[19px] pl-[32px] whitespace-nowrap  group-hover:text-[#ffffff] cursor-pointer">Book Appointment</button>
+                                    <img class="ml-[23px] py-1 pr-1 group-hover:hidden" src="./assests/bookCircle.png" alt="bookCircle">
+                                    <img class="ml-[23px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteCircle.png" alt="whiteCircle">
+                                    <i class="fa-solid fa-arrow-right absolute right-6 top-6 text-[#ffffff] group-hover:text-[#6E9EFA]"></i>
+                                </div>
                             </div>
                             <!-- properties -->
-                            <div class="">
-                                <img class="absolute top-[550px] left-[950px] animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
-                                <img class="absolute top-[170px] left-[50px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
-                                <img class="absolute top-[73px] left-[683px] animate-bounce"src="./assests/bulb.png" alt="bulb">
-                                <img class="absolute top-[30px] left-[815px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
+                            <div>
+                                <img class="hidden lg:block absolute top-[600px] left-[600px] z-999 animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[155px] -left-[130px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
+                                <img class="hidden lg:block absolute top-[73px] left-[330px] animate-bounce"src="./assests/bulb.png" alt="bulb">
+                                <img class="hidden lg:block absolute top-[30px] left-[450px] animate-ping" src="./assests/pinkCircle.png" alt="pinkCircle">
                             </div>
+                        </div>
+
+                        <div class="w-[60%] relative">
+                            <img 
+                                class="w-full h-full object-cover"
+                                src="./assests/bannerImg.png" 
+                                alt=""
+                            >
                         </div>
                     </div>
                 </div>
@@ -319,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination2 mx-30 lg:mx-140 mt-[25px] lg:mt-[90px]"></div>
+                    <div class="swiper-pagination2 mx-30 lg:mx-140 mt-[25px] lg:mt-[60px]"></div>
                 </div>
             </div>
         </div>
@@ -331,11 +350,11 @@
                 <div class="lg:w-[50%] relative">
                     <img class="hidden lg:block absolute right-50 -top-5 z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
                    
-                    <img class="absolute lg:left-30 border border-blue-900" src="./assests/patient1.png" alt="patient1">
-                    <img class="absolute lg:top-70 lg:right-55 debug left-60 lg:left-0" src="./assests/patient1.png" alt="nurse1">
+                    <img class="absolute lg:left-30" src="./assests/patient1.png" alt="patient1">
+                    <img class="absolute lg:top-70 lg:right-55 left-60 lg:left-0" src="./assests/patient1.png" alt="nurse1">
                     
                     <img class="hidden lg:block lg:absolute lg:top-65 lg:-left-5" src="./assests/blueWhite.png" alt="blueWhite">
-                    <div class="hidden lg:block bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-80 left-80 overflow-visible">
+                    <div class="hidden lg:block bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-83 left-80 overflow-visible">
                         <img class="ml-2 mt-2 mb-2" src="./assests/whiteRing.png" alt="whiteRing">
                         <h2 class="font-[500] text-[40px] text-[#FFFFFF] absolute top-10 left-8 flex flex-col justify-center items-center halyardDisplay_font ">1.5K+ <span class="font-[400] text-[14px] dm-sans-font">Visitors</span></h2>
                     </div>
@@ -393,7 +412,7 @@
         </div>
 
         <!-- doctor check up section-->
-        <div class="mt-[100px] relative hiddenn">
+        <div class="mt-[100px] relative">
             <div class="bg-[url('./assests/doctorCheckUpBG.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center pt-[96px]">
                 <div>
                     <h3 class="font-[400] text-[24px] leading-[64px] text-[#6E9EFA] text-center">Need a Doctor for Check-up?</h3>
@@ -416,7 +435,7 @@
         </div>
 
         <!-- case stduy section-->
-        <div class="mt-[95px] hiddenn">
+        <div class="mt-[95px]">
             <!-- text and btn section -->
             <div>
                 <div class="container flex flex-col lg:flex-row lg:gap-[200px] lg:items-end">
@@ -643,13 +662,14 @@
         </div>
 
         <!-- emergency section-->
-        <div class="mt-[155px] hiddenn">
+        <div class="mt-[155px]">
             <div class="container relative flex flex-col lg:flex-row gap-[124px]">
                 <!-- left side images -->
                 <div>
-                    <img src="./assests/patient1.png" alt="doctorandPatient">
-                    <img class="absolute bottom-[50px] left-[50px]" src="./assests/squareLine.png" alt="squareLine">
+                    <img class="w-[450px] h-[352px] object-cover rounded-[10px]" src="./assests/patient1.png" alt="doctorandPatient">
+                    <img class="absolute bottom-[68px] pl-[50px] -left-[1px]" src="./assests/squareLine.png" alt="squareLine">
                     <img class="absolute -top-[45px] right-180" src="./assests/blueRectangle.png" alt="blueRectangle">
+                    <img class="absolute -top-[45px] right-180" src="./assests/blueSquareDots.png" alt="blueSquareDots">
                 </div>
                 <!-- right side text -->
                 <div class="-mt-15">
@@ -696,7 +716,7 @@
         </div>
 
         <!-- ! review section-->
-        <div class="mt-[120px] bg-[#F8F8F8] hiddenn">
+        <div class="mt-[120px] bg-[#F8F8F8]">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
@@ -857,7 +877,7 @@
         </div>
 
         <!-- why choose us section -->
-        <div class="mt-[111px] hiddenn">
+        <div class="mt-[111px]">
             <div class="container">
                 <!-- 1st row -> text + imgs -->
                 <div class="flex gap-[100px]">
@@ -866,13 +886,13 @@
                         <h2 class="font-[500] text-[50px] leading-[60px] text-[#222222] halyardDisplay_font">Trusted by 10 Lakh <br> Customers across 36k+ <br> Visitors hospital.</h2>
                     </div>
                     <div class="flex gap-[30px]">
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature1.png" alt="Feature1">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature1.png" alt="hoveredFeature1">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Friendly Environment</h3>
                             <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
                         </div>
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature2.png" alt="Feature2">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature2.png" alt="hoveredFeature2">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Medical & Health</h3>
@@ -881,25 +901,25 @@
                     </div>
                 </div>
                 <div class="flex gap-[30px] mt-[30px]">
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature3.png" alt="Feature3">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature3.png" alt="hoveredFeature3">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">24/7 Emergency</h3>
                             <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
                         </div>
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature4.png" alt="Feature4">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature4.png" alt="hoveredFeature4">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Quality Treatment</h3>
                             <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
                         </div>
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature5.png" alt="Feature5">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature5.png" alt="hoveredFeature5">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Modern Equipment</h3>
                             <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] text-center">Fusce convallis sem lorem ment Phasellus.</p>
                         </div>
-                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-xl shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
+                        <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature6.png" alt="Feature6">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature6.png" alt="hoveredFeature6">
                             <h3 class="font-[500] text-[20px] text-[#222222] halyardDisplay_font">Exclusive Supports</h3>
@@ -910,7 +930,7 @@
         </div>
 
         <!-- blog section -->
-        <div class="mt-[111px] hiddenn">
+        <div class="mt-[111px]">
             <div class="container">
                 <div class="text-center">
                     <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
@@ -977,7 +997,7 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat hiddenn">
+    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
         <div class="container">
             <!-- newletter section -->
             <div class="pt-[111px] flex gap-[102px]">
@@ -1101,7 +1121,7 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="bg-[#1F1F1F] hiddenn">
+    <div class="bg-[#1F1F1F]">
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
@@ -1209,6 +1229,24 @@
             768: { slidesPerView: 3 },
             1200: { slidesPerView: 4 }, 
         }
+        });
+    </script>
+
+    <!-- for review -->
+    <script>
+        var swiper = new Swiper(".review_swiper", {
+            slidesPerView: 3,
+            spaceBetween:30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1200: { slidesPerView: 3 }, 
+            }
         });
     </script>
     
