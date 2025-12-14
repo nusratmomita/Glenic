@@ -62,7 +62,15 @@ display: none !important;
   color: #ffffff;
 }
 
+/* Scrolled navbar effect*/
+.scrolled{
+  background-color: #fff;
+}
 
+/* when scrolled th nav text should be 0f172a */
+.navLinks-colored a {
+  color: #0f172a;
+}
 /* .review_swiper,
 .review_swiper .swiper-wrapper,
 .review_swiper .swiper-slide {

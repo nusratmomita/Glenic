@@ -28,7 +28,22 @@
 </head>
 
 <body class="dm-sans-font">
-    
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+        <div class="flex flex-col items-center gap-6">
+
+            <!-- Loader -->
+            <div class="relative w-20 h-20">
+                <span class="absolute inset-0 rounded-full border-4 border-[#6E9EFA]/20"></span>
+                <span class="absolute inset-0 rounded-full border-4 border-[#6E9EFA] border-t-transparent animate-spin"></span>
+            </div>
+
+            <!-- Text -->
+            <p class="text-[#6E9EFA] text-sm tracking-widest uppercase">
+                Loading
+            </p>
+        </div>
+    </div>
     <header>
         <!-- header 1st -->
         <div class="bg-[#F8F8F8]">
@@ -184,7 +199,7 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <!-- slide - 1 -->
-                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat">
+                <div class="swiper-slide bg-[url('./assests/bannerImg.png')] bg-cover bg-no-repeat">
                     <div class="container">
                         <div class="pt-[100px] ptt-[281px] pb-[221px]">
                             <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
@@ -210,7 +225,7 @@
                 </div>
 
                 <!-- slide - 2 -->
-                <div class="swiper-slide bg-[url('./assests/bannerBGImg.png')] bg-cover bg-no-repeat overflow-hidden">
+                <div class="swiper-slide bg-[url('./assests/bannerImg.png')] bg-cover bg-no-repeat overflow-hidden">
                     <div class="container">
                         <div class="pt-[100px] ptt-[281px] pb-[221px]">
                             <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
@@ -312,14 +327,14 @@
         </div>
 
         <!-- about us section -->
-        <div class="hidden mt-[111px]">
-            <div class="container flex gapp-[98px]">
+        <div class="mt-[111px]">
+            <div class="container flex flex-col lg:flex-row mb-[75px]">
                 <!-- left side image -->
                 <div class="w-[50%] relative">
-                    <img class="absolute right-50 -top-5 overflow-hidden z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
-                    <img class="absolute left-30 inset-0" src="./assests/patient1.png" alt="patient1">
-                    <img class="absolute top-70 right-55" src="./assests/nurse1.png" alt="nurse1">
-                    <div class="bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-80 left-80 overflow-visible">
+                    <img class="hidden lg:block absolute right-50 -top-5 overflow-hidden z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
+                    <img class="lg:absolute lg:left-30 inset-0" src="./assests/patient1.png" alt="patient1">
+                    <img class="lg:absolute lg:top-70 right-55" src="./assests/patient1.png" alt="nurse1">
+                    <div class="hidden lg:block bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-80 left-80 overflow-visible">
                         <img class="ml-2 mt-2 mb-2" src="./assests/whiteRing.png" alt="whiteRing">
                         <h2 class="font-[500] text-[40px] text-[#FFFFFF] absolute top-10 left-8 flex flex-col justify-center items-center halyardDisplay_font ">1.5K+ <span class="font-[400] text-[14px] dm-sans-font">Visitors</span></h2>
                     </div>
@@ -327,7 +342,7 @@
                 <!-- right side text -->
                 <div class="w-[50%]">
                     <h4 class="font-[400] text-[24px] leading-[34px] text-[#6E9EFA]">10 years experience</h4>
-                    <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] halyardDisplay_font mb-[10px] mt-[4px]">We Are Best Treatment For our Hospital.</h2>
+                    <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] halyardDisplay_font mb-[10px] mt-[4px]">We Are Best Treatment  <br> For our Hospital.</h2>
                     <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] mb-[18px]">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
                     <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C]">Tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
 
@@ -372,16 +387,16 @@
         </div>
 
         <!-- about glenic text -->
-        <div class="hidden pt-[75px] mr-[91px]">
-           <img src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
+        <div class="mt-[75px] mr-[91px]">
+           <img class="mt-[75px]"  src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
         </div>
 
         <!-- doctor check up section-->
-        <div class="hidden mt-[100px] relative">
+        <div class="mt-[100px] relative">
             <div class="bg-[url('./assests/doctorCheckUpBG.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center pt-[96px]">
                 <div>
                     <h3 class="font-[400] text-[24px] leading-[64px] text-[#6E9EFA] text-center">Need a Doctor for Check-up?</h3>
-                    <h2 class="font-[500] text-[50px] leading-[64px] text-[#FFFFFF] text-center halyardDisplay_font">We provide the best medical services <br> for you and your family.</h2>
+                    <h2 class="font-[500] text-[35px] lg:text-[50px] leading-[34px] lg:leading-[64px] text-[#FFFFFF] text-center halyardDisplay_font">We provide the best medical services <br> for you and your family.</h2>
                 </div>
                 <!-- book appoint. btn -->
                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mb-[120px]">
@@ -392,23 +407,23 @@
                 </div>
 
                 <!-- properties -->
-                <img class="hidden lg:block absolute left-[63px] top-[165px]" src="./assests/pinkHalfCircle.png" alt="pinkHalfCircle">
-                <img class="hidden lg:block absolute left-[427px] top-[242px]" src="./assests/blueWhite.png" alt="blueWhite">
-                <img class="hidden lg:block absolute left-[1086px] top-[22px]" src="./assests/pinkCircle.png" alt="pinkCircle">
-                <img class="hidden lg:block absolute left-[1016px] top-[389px]" src="./assests/blueCircle.png" alt="blueCircle">
+                <img class="hidden lg:block absolute left-[63px] top-[165px] animate-pulse" src="./assests/pinkHalfCircle.png" alt="pinkHalfCircle">
+                <img class="hidden lg:block absolute left-[427px] top-[242px] animate-ping" src="./assests/blueWhite.png" alt="blueWhite">
+                <img class="hidden lg:block absolute left-[1086px] top-[22px] animate-pulse" src="./assests/pinkCircle.png" alt="pinkCircle">
+                <img class="hidden lg:block absolute left-[1016px] top-[389px] animate-spin" src="./assests/blueCircle.png" alt="blueCircle">
             </div>
         </div>
 
         <!-- case stduy section-->
-        <div class="hidden mt-[95px]">
+        <div class="mt-[95px]">
             <!-- text and btn section -->
             <div>
-                <div class="container flex gap-[200px] items-end">
+                <div class="container flex flex-col lg:flex-row lg:gap-[200px] lg:items-end">
                     <div>
-                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Recent Projects</h3>
-                        <h2 class="font-[500] text-[50px] leading-[24px] text-[#222222] mt-[23px] halyardDisplay_font">Our case study</h2>
+                        <h3 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Recent Projects</h3>
+                        <h2 class="text-center lg:text-left font-[500] text-[50px] leading-[24px] text-[#222222] mt-[23px] halyardDisplay_font">Our case study</h2>
                     </div>
-                    <div class="mt-15 flex gap-[91px]">
+                    <div class="mt-15 flex flex-col lg:flex-row lg:gap-[91px]">
                         <div class="mt-25 tab">
                             <button onclick="openSpecialist(event, 0)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">All</button>
                             <button onclick="openSpecialist(event, 1)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Neurologists</button>
@@ -627,11 +642,11 @@
         </div>
 
         <!-- emergency section-->
-        <div class="hidden mt-[155px]">
+        <div class="mt-[155px]">
             <div class="container relative flex flex-col lg:flex-row gap-[124px]">
                 <!-- left side images -->
                 <div>
-                    <img src="./assests/doctorandPatient.png" alt="doctorandPatient">
+                    <img src="./assests/patient1.png" alt="doctorandPatient">
                     <img class="absolute bottom-[50px] left-[50px]" src="./assests/squareLine.png" alt="squareLine">
                     <img class="absolute -top-[45px] right-180" src="./assests/blueRectangle.png" alt="blueRectangle">
                 </div>
@@ -680,7 +695,7 @@
         </div>
 
         <!-- ! review section-->
-        <div class="hidden mt-[120px] bg-[#F8F8F8]">
+        <div class="mt-[120px] bg-[#F8F8F8]">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
@@ -841,7 +856,7 @@
         </div>
 
         <!-- why choose us section -->
-        <div class="hidden mt-[111px]">
+        <div class="mt-[111px]">
             <div class="container">
                 <!-- 1st row -> text + imgs -->
                 <div class="flex gap-[100px]">
@@ -894,7 +909,7 @@
         </div>
 
         <!-- blog section -->
-        <div class="hidden mt-[111px]">
+        <div class="mt-[111px]">
             <div class="container">
                 <div class="text-center">
                     <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
@@ -961,7 +976,7 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="hidden  mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
         <div class="container">
             <!-- newletter section -->
             <div class="pt-[111px] flex gap-[102px]">
@@ -1085,11 +1100,42 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="hidden  bg-[#1F1F1F]">
+    <div class="bg-[#1F1F1F]">
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
     </div>
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("preloader").style.opacity = "0";
+                document.getElementById("preloader").style.transition = "opacity 0.7s ease";
+                setTimeout(() => {
+                    document.getElementById("preloader").style.display = "none";
+                }, 700);
+            }, 3000);
+        });
+    </script>
+
+    <!-- sticky navbar -->
+    <!-- <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+
+
+            if(window.scrollY > 0){
+                header.classList.add("scrolled");
+                document.querySelector(".navLinks").classList.add("navLinks-colored");
+            }
+            // normal
+            else{
+                header.classList.remove("scrolled");
+                document.querySelector(".navLinks").classList.remove("navLinks-colored");
+            }
+        })
+    </script> -->
 
     <!-- for search box -->
     <script>
