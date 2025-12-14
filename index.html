@@ -29,21 +29,19 @@
 
 <body class="dm-sans-font">
     <!-- Preloader -->
-    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+    <!-- <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
 
-            <!-- Loader -->
             <div class="relative w-20 h-20">
                 <span class="absolute inset-0 rounded-full border-4 border-[#6E9EFA]/20"></span>
                 <span class="absolute inset-0 rounded-full border-4 border-[#6E9EFA] border-t-transparent animate-spin"></span>
             </div>
 
-            <!-- Text -->
             <p class="text-[#6E9EFA] text-sm tracking-widest uppercase">
                 Loading
             </p>
         </div>
-    </div>
+    </div> -->
     <header>
         <!-- header 1st -->
         <div class="bg-[#F8F8F8]">
@@ -253,7 +251,7 @@
         </div>
 
         <!-- services section -->
-        <div class="mt-[10px] lg:mt-[120px]">
+        <div class="-mt-[300px] lg:mt-[120px]">
             <div class="container">
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
@@ -328,22 +326,24 @@
 
         <!-- about us section -->
         <div class="mt-[111px]">
-            <div class="container flex flex-col lg:flex-row mb-[75px]">
+            <div class="container flex flex-col lg:flex-row">
                 <!-- left side image -->
-                <div class="w-[50%] relative">
-                    <img class="hidden lg:block absolute right-50 -top-5 overflow-hidden z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
-                    <img class="lg:absolute lg:left-30 inset-0" src="./assests/patient1.png" alt="patient1">
-                    <img class="lg:absolute lg:top-70 right-55" src="./assests/patient1.png" alt="nurse1">
-                    <img class="lg:absolute lg:top-65 -left-8" src="./assests/blueWhite.png" alt="blueWhite">
+                <div class="lg:w-[50%] relative">
+                    <img class="hidden lg:block absolute right-50 -top-5 z-0" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
+                   
+                    <img class="absolute lg:left-30 border border-blue-900" src="./assests/patient1.png" alt="patient1">
+                    <img class="absolute lg:top-70 lg:right-55 debug left-60 lg:left-0" src="./assests/patient1.png" alt="nurse1">
+                    
+                    <img class="hidden lg:block lg:absolute lg:top-65 lg:-left-5" src="./assests/blueWhite.png" alt="blueWhite">
                     <div class="hidden lg:block bg-[url('./assests/lightBlueRectangle.png')] w-full bg-no-repeat absolute top-80 left-80 overflow-visible">
                         <img class="ml-2 mt-2 mb-2" src="./assests/whiteRing.png" alt="whiteRing">
                         <h2 class="font-[500] text-[40px] text-[#FFFFFF] absolute top-10 left-8 flex flex-col justify-center items-center halyardDisplay_font ">1.5K+ <span class="font-[400] text-[14px] dm-sans-font">Visitors</span></h2>
                     </div>
                 </div>
                 <!-- right side text -->
-                <div class="w-[50%]">
+                <div class="lg:w-[50%]">
                     <h4 class="font-[400] text-[24px] leading-[34px] text-[#6E9EFA]">10 years experience</h4>
-                    <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] halyardDisplay_font mb-[10px] mt-[4px]">We Are Best Treatment  <br> For our Hospital.</h2>
+                    <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] halyardDisplay_font mb-[10px] lg:mt-[4px]">We Are Best Treatment  <br> For our Hospital.</h2>
                     <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] mb-[18px]">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
                     <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C]">Tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
 
@@ -388,12 +388,12 @@
         </div>
 
         <!-- about glenic text -->
-        <div class="mt-[75px] mr-[91px]">
+        <div class="mt-[175px] mr-[91px]">
            <img class="mt-[75px]"  src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
         </div>
 
         <!-- doctor check up section-->
-        <div class="mt-[100px] relative">
+        <div class="mt-[100px] relative hiddenn">
             <div class="bg-[url('./assests/doctorCheckUpBG.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center pt-[96px]">
                 <div>
                     <h3 class="font-[400] text-[24px] leading-[64px] text-[#6E9EFA] text-center">Need a Doctor for Check-up?</h3>
@@ -416,7 +416,7 @@
         </div>
 
         <!-- case stduy section-->
-        <div class="mt-[95px]">
+        <div class="mt-[95px] hiddenn">
             <!-- text and btn section -->
             <div>
                 <div class="container flex flex-col lg:flex-row lg:gap-[200px] lg:items-end">
@@ -643,7 +643,7 @@
         </div>
 
         <!-- emergency section-->
-        <div class="mt-[155px]">
+        <div class="mt-[155px] hiddenn">
             <div class="container relative flex flex-col lg:flex-row gap-[124px]">
                 <!-- left side images -->
                 <div>
@@ -696,7 +696,7 @@
         </div>
 
         <!-- ! review section-->
-        <div class="mt-[120px] bg-[#F8F8F8]">
+        <div class="mt-[120px] bg-[#F8F8F8] hiddenn">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
@@ -857,7 +857,7 @@
         </div>
 
         <!-- why choose us section -->
-        <div class="mt-[111px]">
+        <div class="mt-[111px] hiddenn">
             <div class="container">
                 <!-- 1st row -> text + imgs -->
                 <div class="flex gap-[100px]">
@@ -910,7 +910,7 @@
         </div>
 
         <!-- blog section -->
-        <div class="mt-[111px]">
+        <div class="mt-[111px] hiddenn">
             <div class="container">
                 <div class="text-center">
                     <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
@@ -977,7 +977,7 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat hiddenn">
         <div class="container">
             <!-- newletter section -->
             <div class="pt-[111px] flex gap-[102px]">
@@ -1101,7 +1101,7 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="bg-[#1F1F1F]">
+    <div class="bg-[#1F1F1F] hiddenn">
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
