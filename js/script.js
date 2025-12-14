@@ -71,3 +71,58 @@ var swiperBanner = new Swiper(".hero_banner_slider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// for header drawer
+const drawer = document.getElementById("drawer");
+const drawerIcon = document.getElementById("drawerIcon");
+const crossIcon = document.getElementById("crossIcon");
+const overlay = document.getElementById("overlayDrawer");
+
+drawerIcon.addEventListener("click", () => {
+    drawer.classList.remove("hidden");
+    drawer.classList.remove("translate-x-full");
+    overlay.classList.remove("hidden")
+});
+
+crossIcon.addEventListener("click", () => {
+    drawer.classList.add("translate-x-full");
+    overlay.classList.add("hidden")
+
+    setTimeout(() => {
+        drawer.classList.add("hidden");
+    }, 300);
+});
+
+// mobile navbar
+ // getting all the HTML
+const hamburger = document.getElementById("hamburger"); 
+const mobileDrawer = document.getElementById("mobileDrawer"); 
+const mobileClose = document.getElementById("mobileClose"); 
+const overlayHeader = document.getElementById("overlayHeader"); 
+
+const mobilePageNav = document.getElementById("mobilePageNav"); 
+const mobilePageNavMenu = document.getElementById("mobilePageNavMenu");
+
+// console.log(drawer, overlay, hamburger, crossIcon, mobilePageNav, mobilePageNavMenu);
+
+// Open drawer
+hamburger.addEventListener("click", () => {
+    mobileDrawer.classList.remove("-translate-x-full");
+    overlayHeader.classList.remove("hidden");
+});
+
+// Close drawer (X button)
+mobileClose.addEventListener("click", () => {
+    mobileDrawer.classList.add("-translate-x-full");
+    overlayHeader.classList.add("hidden");
+});
+
+// Close drawer (overlay click)
+overlayHeader.addEventListener("click", () => {
+    mobileDrawer.classList.add("-translate-x-full");
+    overlayHeader.classList.add("hidden");
+});
+
+mobilePageNav.addEventListener("click", function() {
+    mobilePageNavMenu.classList.toggle("hidden");
+})

@@ -64,17 +64,18 @@
             </div>
         </div>
         <!-- header 2nd -->
-        <div class="container flex gap-[205px]">
+        <div class="container flex gap-[100px] lg:gap-[205px] px-10 lg:px-0">
 
             <!-- to blur the bg -->
-            <div id="overlay" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+            <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
 
             <!-- logo + navlinks -->
             <div class="flex lg:gap-[99px] justify-center items-center">
                 <!-- logo -->
                 <div>
-                    <img class="px-4 lg:px-0" src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
+                    <img src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
                 </div>
+
                 <!-- navlinks -->
                 <div class="hidden lg:block flex justify-center items-center">
                     <ul class="flex gap-[30px] justify-center items-center">
@@ -92,22 +93,26 @@
                 </div>
             </div>
             <!-- nav icons -->
-            <div class="flex items-center relative">
+            <div class="flex gap-1 items-center relative mt-4 lg:mt-0">
+                <!-- hamburger for small screen -->
+                <button id="hamburger" class="lg:hidden">
+                    <i class="fa-solid fa-bars text-md text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer"></i>
+                </button>
+
                 <!-- search icon -->
-                <!-- Search Wrapper -->
-                <div class="relative hidden lg:block">
+                <div class="relative">
                     
                     <!-- Search Icon -->
                     <button id="searchToggle" class="text-[#424B5C] hover:text-[#6E9EFA] transition">
-                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                        <i class="fa-solid fa-magnifying-glass text-lg cursor-pointer"></i>
                     </button>
 
                     <!-- Search Dropdown -->
                     <div id="searchDropdown"
-                        class="absolute -right-30 mt-4 w-[430px] 
+                        class="absolute -right-30 mt-4 lg:w-[430px] 
                             bg-white shadow-xl rounded-[12px] 
                             border border-gray-200 z-999
-                            opacity-0 invisible translate-y-2
+                            opacity-0 invisible translate-y-4
                             transition-all duration-300">
 
                         <div class="flex items-center gap-2 p-3">
@@ -115,14 +120,14 @@
                                 type="text"
                                 placeholder="Search here..."
                                 class="flex-1 px-4 py-2 rounded-full
-                                    border border-gray-300
+                                    border border-gray-300 cp
                                     focus:outline-none focus:ring-2 focus:ring-[#6E9EFA]"
                             />
 
                             <button
                                 class="px-4 py-2 rounded-full
                                     bg-[#6E9EFA] text-white
-                                    hover:bg-[#517fe0] transition">
+                                    hover:bg-[#517fe0] transition cursor-pointer">
                                 Search
                             </button>
                         </div>
@@ -131,15 +136,15 @@
                 </div>
 
                 <!-- language dd-->
-                <div class="group hidden mr-[24px] ml-[29px] lg:flex gap-4 justify-center items-center">
+                <div class="group lg:mr-[24px] lg:ml-[29px] flex flex-row gap-1 lg:gap-4 justify-center items-center">
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">FN</h4>
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">EN</h4>
                     <i class="relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
                         <ul class="z-4 hidden group-hover:block absolute top-full -left-20 bg-white border border-gray-300 w-[140px]">
                             <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">BN</li>
-                            <hr>
+                            <hr class="border border-gray-300">
                             <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">AR</li>
-                            <hr>
+                            <hr class="border border-gray-300">
                             <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">IN</li>
                         </ul>
                     </i>
@@ -147,25 +152,52 @@
                 <!-- drawer icon -->
                 <div>
                     <img class="cursor-pointer" id="drawerIcon" src="./assests/draweIcon.png" alt="drawerIcon">
+
+                    <div id="overlayDrawer" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
                      <div id="drawer" 
-                        class="hidden fixed top-0 right-0 w-[260px] h-full 
-                        bg-white shadow-lg transform translate-x-full rounded-[20px] overflow-hidden border-2 border-[#6E9EFA]
+                        class="hidden fixed top-0 right-0 w-[300px] lg:w-[360px] h-full overflow-y-auto
+                        bg-black shadow-lg transform translate-x-full rounded-l-[30px] overflow-hidden border-2 border-[#6E9EFA]
                         transition-all duration-300 z-50 p-6">
 
                         <!-- cross icon -->
-                        <button id="crossIcon" class="text-3xl cursor-pointer ml-40 mb-15">
-                            <i class="fa-solid fa-xmark hover:text-[#6E9EFA]"></i>
+                        <button id="crossIcon" class="text-3xl cursor-pointer ml-60">
+                            <i class="fa-solid fa-xmark text-white hover:text-[#6E9EFA]"></i>
                         </button>
-                    
-                        <ul class="flex flex-col gap-4 font-[700] text-[20px] text-[#424B5C]">
-                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-calendar-check mr-1"></i>Book appointment</a></li>
-                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-eye mr-2"></i>Ask for guidance</a></li>
-                            <li class="whitespace-nowrap flex items-center"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-regular fa-money-bill-1 mr-2"></i>Pay</a></li>
-                            <li class="whitespace-nowrap flex items-center gap-2"><a href="#" class="hover:text-[#6E9EFA]"><i class="fa-solid fa-star-half mr-2"></i>Review</a></li>
-                        </ul>
+
+                        <div class="flex justify-center items-center">
+                            <img src="./assests/whiteLogo.png" alt="whiteLogo">
+                        </div>
+                        <hr class="text-white mt-3">
+                        <h3 class="text-xl font-semibold text-center mt-5 halyardDisplay_font text-white">Best Doctor service health to our patients.</h3>
+                        <p class="text-md font-medium mt-5 text-white hidden lg:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis optio. Saepe excepturi ipsum sed voluptatem necessitatibus soluta cupiditate error ipsa laudantium! Praesentium atque placeat eaque, ex quisquam rerum amet?</p>
+                        <div class="mt-5 space-y-5 text-white">
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <div class="cursor-pointer bg-transparent rounded-[5px] px-2 py-2 border-2 border-[#6E9EFA] flex justify-center items-center transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-lg hover:bg-[#6E9EFA] hover:text-white">
+                                    <i class="fa-regular fa-calendar-check mr-2"></i>
+                                    <h4 class="text-md font-medium whitespace-nowrap">Book appointment</h4>
+                                </div>
+                                <div class="cursor-pointer bg-transparent rounded-[5px] px-4 py-2 border-2 border-[#6E9EFA] flex justify-center items-center transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-lg hover:bg-[#6E9EFA] hover:text-white">
+                                    <i class="fa-regular fa-money-bill-1 mr-2"></i>
+                                    <h4 class="text-md font-medium whitespace-nowrap">Pay</h4>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row gap-5">
+                                <div class="cursor-pointer bg-transparent rounded-[5px] px-2 py-2 border-2 border-[#6E9EFA] flex justify-center items-center transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-lg hover:bg-[#6E9EFA] hover:text-white">
+                                    <i class="fa-regular fa-eye mr-2"></i>
+                                    <h4 class="text-md font-medium whitespace-nowrap mr-3">Ask for guidance</h4>
+                                </div>
+                                <div class="cursor-pointer bg-transparent rounded-[5px] px-4 py-2 border-2 border-[#6E9EFA] flex justify-center items-center transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-lg hover:bg-[#6E9EFA] hover:text-white">
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <h4 class="text-md font-medium whitespace-nowrap">Review</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
 
         <!-- small screen -->
@@ -175,66 +207,51 @@
                     z-50 p-6 lg:hidden overflow-y-auto">
 
             <div class="flex justify-between items-center mb-4">
-                <img class="w-[110px]" src="./assests/glenicBlackLogo.png" alt="logo">
-                <button id="mobileClose" class="text-2xl">
-                    <i class="fa-solid fa-xmark"></i>
+                <img class="w-[180px] -ml-5" src="./assests/glenicBlackLogo.png" alt="logo">
+                <button id="mobileClose" class="text-2xl mt-6">
+                    <i class="fa-solid fa-xmark cursor-pointer hover:text-[#6E9EFA]"></i>
                 </button>
             </div>
 
-            <hr class="my-4">
 
-            <ul class="flex flex-col gap-4 font-[500] text-[#424B5C]">
-                <li><a class="hover:text-[#6E9EFA]" href="#">Home</a></li>
-                <li><a class="hover:text-[#6E9EFA]" href="#">Pages</a></li>
-                <li><a class="hover:text-[#6E9EFA]" href="#">Services</a></li>
-                <li><a class="hover:text-[#6E9EFA]" href="#">Projects</a></li>
-                <li><a class="hover:text-[#6E9EFA]" href="#">Blog</a></li>
-                <li><a class="hover:text-[#6E9EFA]" href="#">Contact</a></li>
+            <ul class="flex flex-col gap-4 font-[500] text-[#424B5C] mt-15">
+                <li class="group">
+                    <button id="mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#6E9EFA] w-full cursor-pointer">
+                        <span class="text-xl font-medium hover:text-[#6E9EFA]">Home</span>
+                        <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#6E9EFA] bg-gray-300 rounded-[10px] p-1 cursor-pointer"></i>
+                    </button>
+
+                    <ul id="mobilePageNavMenu" class="hidden ml-4 mt-2">
+                        <li><a class="block py-1 hover:text-[#6E9EFA] border border-gray-400 pl-3 rounded-[5px]" href="#">Home 1</a></li>
+                    </ul>
+                </li>
+                <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Pages</a></li>
+                <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Services</a></li>
+                <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Projects</a></li>
+                <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Blog</a></li>
+                <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Contact</a></li>
             </ul>
-
-            <hr class="my-6">
-
-            <ul class="flex flex-col gap-4 font-[600] text-[#424B5C]">
-                <li>
-                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        Book Appointment
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
-                        <i class="fa-regular fa-eye"></i>
-                        Ask for Guidance
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
-                        <i class="fa-regular fa-money-bill-1"></i>
-                        Pay
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center gap-2 hover:text-[#6E9EFA]">
-                        <i class="fa-solid fa-star-half"></i>
-                        Review
-                    </a>
-                </li>
-            </ul>
+             <div class="text-[#424B5CB2] font-[400] text-[25px] leading-[32px] mt-60">
+                <a href="https://www.facebook.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-instagram"></i></a>
+                <a href="https://dribbble.com/"><i class="mr-[25px] hover:text-[#6E9EFA] cursor-pointer fa-brands fa-dribbble"></i></a>
+                <a href="https://www.behance.net/"><i class="fa-brands hover:text-[#6E9EFA] cursor-pointer fa-behance"></i></a>
+            </div>
         </div>
 
     </header>
 
-    <main >
-        <!-- ! banner section -->
+    <main class="hidden">
+        <!-- banner section -->
         <div>
         <div class="swiper hero_banner_slider">
             <div class="swiper-wrapper">
                 <!-- slide - 1 -->
                 <div class="swiper-slide bg-[url('./assests/bannerBlueBG.png')] bg-cover bg-no-repeat">
                     <div class="container flex flex-col lg:flex-row gapp-[130px] items-stretch relative">
-                        <div class="pt-[100px] pb-[221px] w-[50%]">
+                        <div class="pt-[100px] pb-[221px]">
                             <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] whitespace-nowrap">Hi, It’s our Glenic</h4>
-                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment With Our Consultants.</h2>
+                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
                             <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
                             <div class="flex justify-center items-center lg:block">
                                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
@@ -254,7 +271,7 @@
                             </div>
                         </div>
 
-                        <div class="w-[50%] relative">
+                        <div class="relative">
                             <img 
                                 class="w-full h-full object-cover"
                                 src="./assests/bannerImg.png" 
@@ -1031,7 +1048,7 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+    <footer class="hidden mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
         <div class="container">
             <!-- newletter section -->
             <div class="pt-[111px] flex gap-[102px]">
@@ -1155,7 +1172,7 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="bg-[#1F1F1F]">
+    <div class="hidden bg-[#1F1F1F]">
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
@@ -1179,25 +1196,6 @@
             }
         })
     </script> -->
-
-    <!-- for header drawer -->
-    <script>
-        const drawer = document.getElementById("drawer");
-        const drawerIcon = document.getElementById("drawerIcon");
-        const crossIcon = document.getElementById("crossIcon");
-
-        drawerIcon.addEventListener("click", () => {
-            drawer.classList.remove("hidden");
-            drawer.classList.remove("translate-x-full");
-        });
-
-        crossIcon.addEventListener("click", () => {
-            drawer.classList.add("translate-x-full");
-            setTimeout(() => {
-                drawer.classList.add("hidden");
-            }, 300);
-        });
-    </script>
 
     <!-- for banner slider -->
     <script src="./js/swiper-bundle.min.js"></script>
