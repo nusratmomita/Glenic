@@ -24,35 +24,25 @@
 }
 
 .custom-swiper-btn {
-width: 50px;
-height: 50px;
-background: #6E9EFA; /* your color */
-border-radius: 50%; /* make it round */
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #6E9EFA; /* your color */
+  border-radius: 50%; /* make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.swiper-button-next::after {
-content: '\f061'; /* Font Awesome right arrow */
-font-family: "Font Awesome 6 Free";
-font-weight: 900;
-color: white;
-font-size: 18px;
-}
 
-.swiper-button-prev::after {
-content: '\f060'; /* Font Awesome left arrow */
-font-family: "Font Awesome 6 Free";
-font-weight: 900;
-color: white;
-font-size: 18px;
-}
 
 /* remove default swiper arrow */
-.swiper-button-next::before,
-.swiper-button-prev::before {
-display: none !important;
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+    display: none !important;
+}
+
+.custom-swiper-btn::after {
+  display: none;
 }
 
 
@@ -71,8 +61,3 @@ display: none !important;
 .navLinks-colored a {
   color: #0f172a;
 }
-/* .review_swiper,
-.review_swiper .swiper-wrapper,
-.review_swiper .swiper-slide {
-    overflow: visible !important;
-} */
