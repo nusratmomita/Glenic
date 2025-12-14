@@ -59,7 +59,7 @@
                        <a href="https://www.behance.net/"><i class="fa-brands hover:text-[#6E9EFA] cursor-pointer fa-behance"></i></a>
                     </div>
                     <!-- button -->
-                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] border border-[#F8F8F8] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:border hover:border-[#6E9EFA] hover:p-1 hover:rounded-[10px] whitespace-nowrap transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
+                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:p-1 hover:rounded-[10px] whitespace-nowrap transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 <div class="hidden lg:block flex justify-center items-center">
                     <ul class="flex gap-[30px] justify-center items-center">
                         <li class="relative group"><a class="text-[#424B5C] font-[500] text-[16px] leading-none hover:text-[#6E9EFA] cursor-pointer transition-all duration-300 flex justify-center items-center py-2" href="#">Home<i class="fa-solid fa-angle-down ml-1"></i></a>
-                            <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-[#6E9EFA] rounded-[10px] text-left w-[150px] hover:text-[#6E9EFA] z-4">
+                            <ul class="hidden group-hover:block bg-[#ffffff] p-4 absolute top-full left-0 shadow-xl border-2 border-gray-300 text-left w-[150px] hover:text-[#6E9EFA] z-4">
                                 <li class="hover:pl-2 transition-all duration-300"><a class="font-[500] text-md" href="homepage2.html">Home Page 2</a></li>
                             </ul>
                         </li>
@@ -94,21 +94,53 @@
             <!-- nav icons -->
             <div class="flex items-center relative">
                 <!-- search icon -->
-                <button class="hidden lg:flex flex-row justify-center items-center gap-2">
-                    <i id="searchIcon" class="fa-solid fa-magnifying-glass text-[#424B5C] cursor-pointer"></i>
-                    <input class="w-0 opacity-0 border border-gray-400 rounded-md p-1 transition-all duration-300 focus:w-20 focus:opacity-100" type="text" name="search" id="searchBox" placeholder="Search">
-                </button>
+                <!-- Search Wrapper -->
+                <div class="relative hidden lg:block">
+                    
+                    <!-- Search Icon -->
+                    <button id="searchToggle" class="text-[#424B5C] hover:text-[#6E9EFA] transition">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+
+                    <!-- Search Dropdown -->
+                    <div id="searchDropdown"
+                        class="absolute -right-30 mt-4 w-[430px] 
+                            bg-white shadow-xl rounded-[12px] 
+                            border border-gray-200 z-999
+                            opacity-0 invisible translate-y-2
+                            transition-all duration-300">
+
+                        <div class="flex items-center gap-2 p-3">
+                            <input
+                                type="text"
+                                placeholder="Search here..."
+                                class="flex-1 px-4 py-2 rounded-full
+                                    border border-gray-300
+                                    focus:outline-none focus:ring-2 focus:ring-[#6E9EFA]"
+                            />
+
+                            <button
+                                class="px-4 py-2 rounded-full
+                                    bg-[#6E9EFA] text-white
+                                    hover:bg-[#517fe0] transition">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
                 <!-- language dd-->
-                <div class="hidden mr-[24px] ml-[29px] lg:flex gap-4 justify-center items-center">
+                <div class="group hidden mr-[24px] ml-[29px] lg:flex gap-4 justify-center items-center">
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">FN</h4>
                     <h4 class="text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer">EN</h4>
-                    <i class="group relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
-                        <ul class="z-4 hidden group-hover:block absolute top-full -left-10 bg-white rounded-[10px] border border-[#6E9EFA] w-[120px]">
-                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">BN 🏳</li>
+                    <i class="relative fa-solid fa-angle-down text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer py-3">
+                        <ul class="z-4 hidden group-hover:block absolute top-full -left-20 bg-white border border-gray-300 w-[140px]">
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">BN</li>
                             <hr>
-                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">AR 🏳</li>
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">AR</li>
                             <hr>
-                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">IN 🏳</li>
+                            <li class="text-left p-6 text-[#424B5C] font-md hover:text-[#6E9EFA] hover:pl-4 transition-all duration-300">IN</li>
                         </ul>
                     </i>
                 </div>
@@ -194,14 +226,15 @@
 
     <main >
         <!-- ! banner section -->
-        <div class="swiper mySwiper">
+        <div>
+        <div class="swiper hero_banner_slider">
             <div class="swiper-wrapper">
                 <!-- slide - 1 -->
-                <div class="swiper-slide">
-                    <div class="container flex flex-col lg:flex-row gap-[130px] items-stretch relative">
-                        <div class="pt-[100px] pb-[221px] w-[40%]">
-                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA] whitespace-nowrap">Hi, It’s our Glenic</h4>
-                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
+                <div class="swiper-slide bg-[url('./assests/bannerBlueBG.png')] bg-cover bg-no-repeat">
+                    <div class="container flex flex-col lg:flex-row gapp-[130px] items-stretch relative">
+                        <div class="pt-[100px] pb-[221px] w-[50%]">
+                            <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] whitespace-nowrap">Hi, It’s our Glenic</h4>
+                            <h2 class=" whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment With Our Consultants.</h2>
                             <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
                             <div class="flex justify-center items-center lg:block">
                                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
@@ -221,7 +254,7 @@
                             </div>
                         </div>
 
-                        <div class="w-[60%] relative">
+                        <div class="w-[50%] relative">
                             <img 
                                 class="w-full h-full object-cover"
                                 src="./assests/bannerImg.png" 
@@ -267,6 +300,7 @@
             </div>
             <div class="swiper-button-next custom-swiper-btn"></div>
             <div class="swiper-button-prev custom-swiper-btn"></div>
+        </div>
         </div>
 
         <!-- services section -->
@@ -407,7 +441,7 @@
         </div>
 
         <!-- about glenic text -->
-        <div class="mt-[175px] mr-[91px]">
+        <div class="mt-[175px] mr-[91px] flex justify-center items-center">
            <img class="mt-[75px]"  src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
         </div>
 
@@ -1009,9 +1043,9 @@
 
                     <input type="email" placeholder="Enter Your Newsletter..." class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
 
-                    <div class="relative flex items-center pr-3">
-                        <img src="./assests/footerBlueCircle.png" alt="">
-                        <i class="fa-solid fa-arrow-right absolute bottom-8 left-7 text-white"></i>
+                    <div class="relative flex items-center pr-3 cursor-pointer">
+                        <img src="./assests/footerBlueCircle.png" alt="footerBlueCircle">
+                        <i class="fa-solid fa-arrow-right absolute bottom-5 left-7 text-white"></i>
                     </div>
                 </div>
             </div>
@@ -1126,19 +1160,7 @@
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
     </div>
-
-    <!-- preloader -->
-    <script>
-        window.addEventListener("load", () => {
-            setTimeout(() => {
-                document.getElementById("preloader").style.opacity = "0";
-                document.getElementById("preloader").style.transition = "opacity 0.7s ease";
-                setTimeout(() => {
-                    document.getElementById("preloader").style.display = "none";
-                }, 700);
-            }, 3000);
-        });
-    </script>
+    <script src="./js/jquery.js"></script>
 
     <!-- sticky navbar -->
     <!-- <script>
@@ -1157,26 +1179,6 @@
             }
         })
     </script> -->
-
-    <!-- for search box -->
-    <script>
-        const searchIcon = document.getElementById("searchIcon");
-        const searchBox = document.getElementById("searchBox");
-
-        // console.log(searchBox,searchIcon)
-
-        searchIcon.addEventListener("click", (e)=>{
-            e.stopPropagation();// prevents closing immediately
-            searchBox.classList.add("w-20", "opacity-100");
-            searchBox.focus();
-            searchIcon.classList.add("hidden")
-        })
-
-        // Close when clicking outside
-        document.addEventListener("click", () => {
-            searchBox.classList.remove("w-20", "opacity-100");
-        });
-    </script>
 
     <!-- for header drawer -->
     <script>
@@ -1199,20 +1201,6 @@
 
     <!-- for banner slider -->
     <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        effect: "fade",
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // },
-        });
-    </script>
 
     <!-- for service slider -->
     <script>
@@ -1251,7 +1239,7 @@
     </script>
     
     <!-- for video popup -->
-    <script src="./js/jquery.js"></script>
+    <!-- <script src="./js/jquery.js"></script> -->
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function() {

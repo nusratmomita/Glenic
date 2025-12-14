@@ -1,3 +1,14 @@
+// preloader
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("preloader").style.opacity = "0";
+        document.getElementById("preloader").style.transition = "opacity 0.7s ease";
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+        }, 700);
+    }, 3000);
+});
+
 // for case study
 var swiper = new Swiper(".my-director-slider", {
     slidesPerView: 1,
@@ -32,40 +43,31 @@ document.getElementById("rightArrow").onclick = function () {
     swiper.slideNext()
 }
 
-// const drawer = document.getElementById("mobileDrawer");
-// const drawerIcon = document.getElementById("drawerIcon");
-// const closeIcon = document.getElementById("mobileClose");
-// const overlay = document.getElementById("overlay");
+// for search box
+const searchToggle = document.getElementById("searchToggle");
+const searchDropdown = document.getElementById("searchDropdown");
 
-// // OPEN drawer
-// drawerIcon.addEventListener("click", () => {
-//     drawer.classLook.remove("-translate-x-full");
-//     overlay.classList.remove("hidden");
-// });
+searchToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    searchDropdown.classList.toggle("opacity-0");
+    searchDropdown.classList.toggle("invisible");
+    searchDropdown.classList.toggle("translate-y-2");
+});
 
-// // CLOSE drawer (X icon)
-// closeIcon.addEventListener("click", () => {
-//     drawer.classList.add("-translate-x-full");
-//     overlay.classList.add("hidden");
-// });
+// Prevent closing when clicking inside dropdown
+searchDropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
 
-// // CLOSE drawer (overlay click)
-// overlay.addEventListener("click", () => {
-//     drawer.classList.add("-translate-x-full");
-//     overlay.classList.add("hidden");
-// });
-// for review
-// var swiper = new Swiper(".review_swiper", {
-//     slidesPerView: 3,
-//     spaceBetween:30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-//     breakpoints: {
-//         0: { slidesPerView: 1 },
-//         640: { slidesPerView: 1 },
-//         768: { slidesPerView: 2 },
-//         1200: { slidesPerView: 3 }, 
-//     }
-// });
+// Close when clicking outside
+document.addEventListener("click", () => {
+    searchDropdown.classList.add("opacity-0", "invisible", "translate-y-2");
+});
+
+// for banner slider
+var swiperBanner = new Swiper(".hero_banner_slider", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
