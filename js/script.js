@@ -17,13 +17,6 @@ var swiper = new Swiper(".case_study_slider", {
         el: ".case_study_slider_pagination3",
         clickable: true,
     },
-    // breakpoints: {
-    //     0: { slidesPerView: 1 },
-    //     640: { slidesPerView: 1 },
-    //     768: { slidesPerView: 2 },
-    //     1200:{ slidesPerView: 3 },
-    // },
-
 });
 
 // case study
@@ -135,19 +128,83 @@ mobilePageNav.addEventListener("click", function() {
     mobilePageNavMenu.classList.toggle("hidden");
 })
 
- 
+// for video popup
+$(document).ready(function() {
+$('.video-popup').magnificPopup({
+    type: 'iframe',
+    iframe: {
+        patterns: {
+            youtube: {
+                index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                // Or null - full URL will be returned
+                // Or a function that should return %id%, for example:
+                // id: function(url) { return 'parsed id'; }
+
+                src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                },
+        }
+    }
+});
+});
+
+// for review
+var swiper_review = new Swiper(".review_swiper", {
+    slidesPerView: 3,
+    spaceBetween:30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }, 
+    }
+
+});
+
 // for service slider
-// var swiperService = new Swiper(".mySwiper2", {
-// spaceBetween: 30,
-// slidesPerView: 4,
-// pagination: {
-//     el: ".swiper-pagination2",
-//     clickable: true,
-// },
-// breakpoints: {
-//     0: { slidesPerView: 1 },
-//     640: { slidesPerView: 1 },
-//     768: { slidesPerView: 3 },
-//     1200: { slidesPerView: 4 }, 
-// }
-// });
+var service_swiper = new Swiper(".mySwiper2", {
+spaceBetween: 30,
+slidesPerView: 4,
+pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+},
+breakpoints: {
+    0: { slidesPerView: 1 },
+    640: { slidesPerView: 1 },
+    768: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 }, 
+}
+});
+
+//  sticky navbar
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+
+    const blackLogo = document.querySelector(".blackLogo");
+    const whiteLogo = document.querySelector(".whiteLogo");
+
+    if(window.scrollY > 0){
+        header.classList.add("scrolled");
+        document.querySelector(".navLinks").classList.add("navLinks-colored");
+        document.querySelector(".nestedLink").classList.add("nestedLink");
+
+
+        blackLogo.classList.add("hidden");
+        whiteLogo.classList.remove("hidden");
+    }
+    // normal
+    else{
+        header.classList.remove("scrolled");
+        document.querySelector(".navLinks").classList.remove("navLinks-colored");
+
+
+        blackLogo.classList.remove("hidden");
+        whiteLogo.classList.add("hidden");
+    }
+})

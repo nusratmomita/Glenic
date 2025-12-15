@@ -80,18 +80,21 @@
 
 /* Scrolled navbar effect*/
 .scrolled{
-  background-color: #fff;
+  background-color: #000000;
 }
 
 /* when scrolled th nav text should be 0f172a */
 .navLinks-colored a {
-  color: #0f172a;
+  color: white;
+}
+
+.nestedLink a{
+  color: black;
 }
 
 .review_swiper{
   padding-top: 20px;
 }
-
 
 @media screen and (max-width: 576px){
   .custom-swiper-btn_next, .custom-swiper-btn_prev{
