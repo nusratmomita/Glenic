@@ -528,13 +528,16 @@
                             <button onclick="openSpecialist(event, 2)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Orthopedic</button>
                             <button onclick="openSpecialist(event, 3)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">COVID-19</button>
                         </div>
-                        <div class="flex mt-10 lg:mt-15">
-                            <div>
-                                <img id="leftArrow" class="swiper-pagination3 cursor-pointer" src="./assests/leftSliderArrow.png" alt="leftSliderArrow">
+                        <div class="flex gap-[10px] mt-10 lg:mt-15">
+                            <div id="leftArrow" class="swiper-pagination3 cursor-pointer group bg-[#F8F8F8] w-[50px] h-[50px] rounded-[50%] flex justify-center items-center hover:bg-[#6E9EFA]">
+                                <i class="fa-solid fa-arrow-left text-[#424B5C] group-hover:text-white"></i>
+                                <!-- <img id="leftArrow" class="swiper-pagination3 cursor-pointer" src="./assests/leftSliderArrow.png" alt="leftSliderArrow"> -->
                             </div>
-                            <div>
-                                <img id="rightArrow" class="ml-[10px] swiper-pagination3 cursor-pointer" src="./assests/rightSliderArrow.png" alt="rightSliderArrow">
-                            </div>
+                            <div class="swiper-pagination3">
+                                <div id="rightArrow" class="cursor-pointer group bg-[#6E9EFA] w-[50px] h-[50px] rounded-[50%] flex justify-center items-center hover:bg-[#F8F8F8]">
+                                <i class="fa-solid fa-arrow-right text-white group-hover:text-[#424B5C]"></i>
+                                <!-- <img id="leftArrow" class="swiper-pagination3 cursor-pointer" src="./assests/leftSliderArrow.png" alt="leftSliderArrow"> -->
+                            </div>                            </div>
                         </div>
                     </div>
                 </div>
