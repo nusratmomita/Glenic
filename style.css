@@ -91,3 +91,10 @@
 .review_swiper{
   padding-top: 20px;
 }
+
+
+@media screen and (max-width: 576px){
+  .custom-swiper-btn_next, .custom-swiper-btn_prev{
+    top: 65%;
+  }
+}
