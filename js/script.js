@@ -26,6 +26,7 @@ var swiper = new Swiper(".case_study_slider", {
 
 });
 
+// case study
 function openSpecialist(event, index){
     swiper.slideTo(index)
 
@@ -74,8 +75,8 @@ document.addEventListener("click", () => {
 // for banner slider
 var swiperBanner = new Swiper(".hero_banner_slider", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".custom-swiper-btn_next",
+        prevEl: ".custom-swiper-btn_prev",
     },
 });
 

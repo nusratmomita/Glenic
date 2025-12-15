@@ -23,27 +23,53 @@
     margin: auto;
 }
 
-.custom-swiper-btn {
+.hero_banner_slider {
+  position: relative;
+}
+
+/* common styles */
+.custom-swiper-btn_next{
   width: 50px;
   height: 50px;
-  background: #6E9EFA; /* your color */
-  border-radius: 50%; /* make it round */
+  background: #6E9EFA;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
+.custom-swiper-btn_prev {
+  width: 50px;
+  height: 50px;
+  background: rgb(237, 237, 237);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
-
-/* remove default swiper arrow */
-.swiper .swiper-button-next::after,
-.swiper .swiper-button-prev::after {
-    display: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-.custom-swiper-btn::after {
-  display: none;
+/* left button */
+.custom-swiper-btn_prev {
+  left: 20px;
 }
+
+/* right button */
+.custom-swiper-btn_next {
+  right: 20px;
+}
+
 
 
 /* Create an active/current tablink class */

@@ -45,10 +45,10 @@
     <header>
         <!-- header 1st -->
         <div class="bg-[#F8F8F8]">
-            <div class="container flex lg:gap-[470px] gap-[35px]">
+            <div class="container lg:flex lg:gap-[470px]">
                 <!-- mob. no + email -->
-                <div>
-                    <h1 class="font-[400] text-[14px] leading-none text-[#424B5C] pt-[18px] pb-[14px] px-4 lg:px-0">Call Me (+55) -66 99 88<span class="text-[#F8F8F8]">99</span><span>/</span><span class="text-[#F8F8F8] ">99</span>info.Glenic@gmail.com</h1>
+                <div class="flex justify-center items-center">
+                    <h1 class="font-[400] text-[14px] leading-none text-[#424B5C] pt-[18px] pb-[14px] whitespace-nowrap">Call Me (+55) -66 99 88<span class="text-[#F8F8F8]">99</span><span>/</span><span class="text-[#F8F8F8] ">99</span>info.Glenic@gmail.com</h1>
                 </div>
                 <!-- icon + btn -->
                 <div class="flex justify-center items-center gap-[83px]">
@@ -59,12 +59,12 @@
                        <a href="https://www.behance.net/"><i class="fa-brands hover:text-[#6E9EFA] cursor-pointer fa-behance"></i></a>
                     </div>
                     <!-- button -->
-                    <button class="font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:p-1 hover:rounded-[10px] whitespace-nowrap transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
+                    <button class="hidden lg:block font-[400] text-[14px] leading-[194%] tracking-[0.2px] text-[#424B5C] p-1 flex justify-center items-center cursor-pointer hover:text-[#6E9EFA] hover:p-1 hover:rounded-[10px] whitespace-nowrap transition-all duration-300">Let’s talk<i class="fa-solid fa-arrow-right text-[#6E9EFA]  ml-[10px]"></i></button>
                 </div>
             </div>
         </div>
         <!-- header 2nd -->
-        <div class="container flex gap-[100px] lg:gap-[205px] px-10 lg:px-0">
+        <div class="container flex gap-[10px] lg:gap-[205px] px-1 lg:px-0">
 
             <!-- to blur the bg -->
             <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
@@ -73,7 +73,7 @@
             <div class="flex lg:gap-[99px] justify-center items-center">
                 <!-- logo -->
                 <div>
-                    <img src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
+                    <img class="" src="./assests/glenicBlackLogo.png" alt="glenicBlackLogo">
                 </div>
 
                 <!-- navlinks -->
@@ -241,16 +241,16 @@
 
     </header>
 
-    <main>
+    <main class="hidden">
         <!-- banner section -->
-        <div class="swiper hero_banner_slider">
+        <div class="swiper hero_banner_slider ">
             <div class="swiper-wrapper">
                 <!-- slide - 1 -->
                 <div class="swiper-slide bg-[url('./assests/bannerBlueBG.png')] bg-cover bg-no-repeat">
                     <div class="container flex flex-col lg:flex-row relative">
-                        <div class="pt-[100px] pb-[221px] ">
-                            <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
-                            <h2 class="whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
+                        <div class="mt-[212px] pb-[221px]">
+                            <h4 class=" text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
+                            <h2 class="whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[70px] text-[#222222] halyardDisplay_font">Make Your Appointment <br> With Our Consultants.</h2>
                             <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
                             <div class="flex justify-center items-center lg:block">
                                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
@@ -262,7 +262,7 @@
                             </div>
                             <!-- properties -->
                             <div>
-                                <img class="w-100 h-100 hidden lg:block absolute top-[0px] -right-[30px] animate-ping" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
+                                <img class="w-50 h-50 hidden lg:block absolute top-[0px] left-[650px]" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
                                 <img class="hidden lg:block absolute top-[600px] left-[600px] z-999 animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
                                 <img class="hidden lg:block absolute top-[155px] -left-[130px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
                                 <img class="hidden lg:block absolute top-[73px] left-[330px] animate-bounce"src="./assests/bulb.png" alt="bulb">
@@ -283,9 +283,9 @@
                 <!-- slide - 2 -->
                 <div class="swiper-slide bg-[url('./assests/bannerBlueBG.png')] bg-cover bg-no-repeat">
                     <div class="container flex flex-col lg:flex-row relative">
-                        <div class="pt-[100px] pb-[221px] ">
+                        <div class="pt-[212px] pb-[200px]">
                             <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Hi, It’s our Glenic</h4>
-                            <h2 class="whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[90px] text-[#222222] halyardDisplay_font">Good Health Moves Us <br>Forward.</h2>
+                            <h2 class="whitespace-nowrap text-center lg:text-left font-[500] text-[30px] lg:text-[70px] leading-[40px] lg:leading-[70px] text-[#222222] halyardDisplay_font">Good Health Moves Us <br>Forward.</h2>
                             <p class="px-4 lg:px-0 text-center lg:text-left font-[400] text-[18px] leading-[20px] lg:leading-[28px] text-[#424B5C] mt-[10px] lg:mt-[29px]">Pellentesque a arcu tincidunt, sollicitudin eros sed, venenatis justo. Proin sed tellus massa. Nullam bibendum sodales est in faucibus.</p>
                             <div class="flex justify-center items-center lg:block">
                                 <div class="group relative bgg-[#FFFFFF] bg-gray-100 mt-[40px] rounded-[40px] w-[280px] h-[62px] flex hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
@@ -297,7 +297,7 @@
                             </div>
                             <!-- properties -->
                             <div>
-                                <img class="w-100 h-100 hidden lg:block absolute top-[0px] -right-[30px] animate-ping" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
+                                <img class="w-50 h-50 hidden lg:block absolute top-[0px] left-[650px]" src="./assests/pinkFullCircle.png" alt="pinkFullCircle">
                                 <img class="hidden lg:block absolute top-[600px] left-[600px] z-999 animate-pulse" src="./assests/blueCircle.png" alt="blueCircle">
                                 <img class="hidden lg:block absolute top-[155px] -left-[130px] animate-spin" src="./assests/blueWhite.png" alt="blueCircle">
                                 <img class="hidden lg:block absolute top-[73px] left-[330px] animate-bounce"src="./assests/bulb.png" alt="bulb">
@@ -305,7 +305,7 @@
                             </div>
                         </div>
 
-                        <div class="relative lg:-ml-10 -mt-50 lg:-mt-0">
+                        <div class="w-full">
                             <img 
                                 class="w-full h-full object-cover"
                                 src="./assests/bannerImg.png" 
@@ -315,11 +315,11 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next custom-swiper-btn">
+            <div class="custom-swiper-btn_next">
                 <i class="fa-solid fa-arrow-right text-white"></i>
             </div>
-            <div class="swiper-button-prev custom-swiper-btn">
-                <i class="fa-solid fa-arrow-left"></i>
+            <div class="custom-swiper-btn_prev">
+                <i class="fa-solid fa-arrow-left text-[#424B5C]"></i>
             </div>
         </div>
 
@@ -1027,7 +1027,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1045,7 +1045,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1063,7 +1063,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1092,7 +1092,7 @@
 
                     <div class="relative flex items-center pr-3 cursor-pointer">
                         <img src="./assests/footerBlueCircle.png" alt="footerBlueCircle">
-                        <i class="fa-solid fa-arrow-right absolute bottom-5 left-7 text-white"></i>
+                        <i class="fa-solid fa-arrow-right absolute bottom-[30px] left-7 text-white"></i>
                     </div>
                 </div>
             </div>
