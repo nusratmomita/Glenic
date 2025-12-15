@@ -10,13 +10,20 @@ window.addEventListener("load", () => {
 });
 
 // for case study
-var swiper = new Swiper(".my-director-slider", {
+var swiper = new Swiper(".case_study_slider", {
     slidesPerView: 1,
     spaceBetween:30,
     pagination: {
-        el: ".swiper-pagination3",
+        el: ".case_study_slider_pagination3",
         clickable: true,
     },
+    // breakpoints: {
+    //     0: { slidesPerView: 1 },
+    //     640: { slidesPerView: 1 },
+    //     768: { slidesPerView: 2 },
+    //     1200:{ slidesPerView: 3 },
+    // },
+
 });
 
 function openSpecialist(event, index){
@@ -126,3 +133,20 @@ overlayHeader.addEventListener("click", () => {
 mobilePageNav.addEventListener("click", function() {
     mobilePageNavMenu.classList.toggle("hidden");
 })
+
+ 
+// for service slider
+// var swiperService = new Swiper(".mySwiper2", {
+// spaceBetween: 30,
+// slidesPerView: 4,
+// pagination: {
+//     el: ".swiper-pagination2",
+//     clickable: true,
+// },
+// breakpoints: {
+//     0: { slidesPerView: 1 },
+//     640: { slidesPerView: 1 },
+//     768: { slidesPerView: 3 },
+//     1200: { slidesPerView: 4 }, 
+// }
+// });

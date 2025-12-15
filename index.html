@@ -485,7 +485,7 @@
         </div>
 
         <!-- about glenic text -->
-        <div class="mt-[175px] mr-[91px] flex justify-center items-center hidden">
+        <div class="lg:mt-[175px] ;mr-[91px] flex justify-center items-center">
            <img class="mt-[75px]"  src="./assests/aboutGlenicText.png" alt="aboutGlenicText">
         </div>
 
@@ -513,22 +513,22 @@
         </div>
 
         <!-- case stduy section-->
-        <div class="mt-[95px] hidden">
+        <div class="mt-[95px] hiddenn">
             <!-- text and btn section -->
             <div>
                 <div class="container flex flex-col lg:flex-row lg:gap-[200px] lg:items-end">
                     <div>
                         <h3 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Recent Projects</h3>
-                        <h2 class="text-center lg:text-left font-[500] text-[50px] leading-[24px] text-[#222222] mt-[23px] halyardDisplay_font">Our case study</h2>
+                        <h2 class="text-center lg:text-left font-[500] text-[45px] lg:text-[50px] leading-[24px] text-[#222222] mt-[23px] halyardDisplay_font">Our case study</h2>
                     </div>
-                    <div class="mt-15 flex flex-col lg:flex-row lg:gap-[91px]">
-                        <div class="mt-25 tab">
+                    <div class="lg:mt-15 flex flex-col lg:flex-row lg:gap-[91px] justify-center items-center">
+                        <div class="mt-10 lg:mt-25 tab">
                             <button onclick="openSpecialist(event, 0)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">All</button>
                             <button onclick="openSpecialist(event, 1)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Neurologists</button>
                             <button onclick="openSpecialist(event, 2)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">Orthopedic</button>
                             <button onclick="openSpecialist(event, 3)" class="tablinks font-[400] text-[14px] halyardDisplay_font cursor-pointer hover:bg-[#6E9EFA] text-[#424B5C] hover:text-[#FFFFFF] border border-[#2222221A] rounded-[32px] px-[23px] py-[3px]">COVID-19</button>
                         </div>
-                        <div class="flex mt-15">
+                        <div class="flex mt-10 lg:mt-15">
                             <div>
                                 <img id="leftArrow" class="swiper-pagination3 cursor-pointer" src="./assests/leftSliderArrow.png" alt="leftSliderArrow">
                             </div>
@@ -542,7 +542,7 @@
             <!-- card section -->
             <div class="mt-[50px]">
                 <div class="container">
-                    <div class="swiper my-director-slider">
+                    <div class="swiper case_study_slider">
                         <div class="swiper-wrapper">
                             <!-- slide 1(all) -->
                             <div class="swiper-slide">
@@ -733,41 +733,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination3 mt-[60px] flex justify-center items-center"></div>
+                        <div class="case_study_slider_pagination3 mt-[60px] flex justify-center items-center"></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- emergency section-->
-        <div class="mt-[155px] hidden">
+        <div class="mt-[155px]">
             <div class="container relative flex flex-col lg:flex-row gap-[124px]">
                 <!-- left side images -->
                 <div>
-                    <img class="w-[450px] h-[352px] object-cover rounded-[10px]" src="./assests/patient1.png" alt="doctorandPatient">
-                    <img class="absolute bottom-[68px] pl-[50px] -left-[1px]" src="./assests/squareLine.png" alt="squareLine">
-                    <img class="absolute -top-[45px] right-180" src="./assests/blueRectangle.png" alt="blueRectangle">
-                    <img class="absolute -top-[45px] right-180" src="./assests/blueSquareDots.png" alt="blueSquareDots">
+                    <img class="w-[450px] h-[352px] object-cover rounded-[10px] mx-auto" src="./assests/patient1.png" alt="doctorandPatient">
+                    <img class="hidden lg:block absolute bottom-[68px] pl-[50px] -left-[1px]" src="./assests/squareLine.png" alt="squareLine">
+                    <img class="hidden lg:block absolute absolute -top-[45px] right-180" src="./assests/blueRectangle.png" alt="blueRectangle">
+                    <img class="hidden lg:block absolute absolute -top-[45px] right-180" src="./assests/blueSquareDots.png" alt="blueSquareDots">
                 </div>
                 <!-- right side text -->
                 <div class="-mt-15">
                     <div>
-                        <h3 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Emergency Helpline</h3>
-                        <h2 class="font-[500] text-[50px] leading-[62px] text-[#222222] mt-[4px] halyardDisplay_font">Need Emergency Contact?</h2>
-                        <p class="font-[400] text-[16px] leading-[30px] text-[#424B5C] mt-[12px]">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer <br> tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et <br> orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
+                        <h3 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Emergency Helpline</h3>
+                        <h2 class="text-center lg:text-left font-[500] text-[45px] lg:text-[50px] leading-[62px] text-[#222222] mt-[4px] halyardDisplay_font">Need Emergency Contact?</h2>
+                        <p class="text-center lg:text-left font-[400] text-[16px] leading-[30px] text-[#424B5C] mt-[12px] px-4 lg:px-0">Fusce eu eros nec felis venenatis fermentum sit amet eget turpis. Integer <br class="hidden lg:block"> tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et <br class="hidden lg:block"> orci id, euismod tempor arcu semper congue nulla amet finibus.</p>
                     </div>
-                    <div class="mt-[16px] flex gap-[20px] items-center">
+                    <div class="mt-[16px] flex gap-[20px] items-center justify-center lg:justify-start">
                         <div class="bg-[#6E9EFA] w-[4px] h-[12px] rounded-[3px] mt-2"></div>
                         <h3 class="font-[400] text-[24px] leading-[36px] text-[#222222] halyardDisplay_font">24/7 Contact Our Hospital.</h3>
                     </div>
-                    <div class="mt-[16px] flex gap-[20px] items-center">
+                    <div class="mt-[16px] flex gap-[20px] items-center justify-center lg:justify-start">
                         <div class="bg-[#6E9EFA] w-[4px] h-[12px] rounded-[3px] mt-2"></div>
                         <h3 class="font-[400] text-[24px] leading-[36px] text-[#222222] halyardDisplay_font">Emergency Contact Our Phone Number.</h3>
                     </div>
                     <!-- no. & email -->
-                    <div class="mt-[41px] flex gap-[30px]">
+                    <div class="mt-[41px] flex flex-col lg:flex-row gap-[30px] px-12 lg:px-0">
                         <!-- no. -->
-                        <div class="rounded-[5px] border-t border-[#6E9EFA1A]  flex gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
+                        <div class="rounded-[5px] border-t border-[#6E9EFA1A] flex justify-center items-center lg:justify-start lg:items-start gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
                             <!-- icon -->
                             <div class="bg-[#6E9EFA] w-[40px] h-[40px] rounded-[50px]">
                                 <i class="fa-solid fa-phone text-white p-[11px] "></i>
@@ -778,7 +778,7 @@
                             </div>
                         </div>
                         <!-- email -->
-                        <div class="rounded-[5px] border-t border-[#6E9EFA1A] flex gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
+                        <div class="rounded-[5px] border-t border-[#6E9EFA1A] flex justify-center items-center lg:justify-start lg:items-start gap-[8px] bg-[#FFFFFF] shadow-lg shadow-[#0000000D] pt-[17px] pr-[67px] pb-[16px] pl-[30px]">
                             <!-- icon -->
                             <div class="bg-[#6E9EFA] w-[40px] h-[40px] rounded-[50px]">
                                 <i class="fa-regular fa-envelope text-white p-[12px] "></i>
@@ -793,19 +793,19 @@
             </div>
         </div>
 
-        <!-- ! review section-->
-        <div class="mt-[120px] bg-[#F8F8F8] hidden">
+        <!-- review section-->
+        <div class="mt-[120px] bg-[#F8F8F8]">
             <div class="container flex flex-col justify-center items-center pt-[111px] pb-[173px]">
                 <div>
                     <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] text-center">Our Testimonials</h4>
-                    <h3 class="font-[500] text-[50px] leading-[24px] text-[#222222] mt-[22px] halyardDisplay_font">What clients Say?</h3>
+                    <h3 class="font-[500] text-[40px] lg:text-[50px] leading-[24px] text-[#222222] mt-[22px] halyardDisplay_font">What clients Say?</h3>
                 </div>
                 <!-- review card -->
                 <div class="mt-[57px] w-full">
-                    <div class="swiper review_swiper">
+                    <div class="swiper review_swiper relative pb-[270px]">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                            <div class="swiper-slide ">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -829,7 +829,7 @@
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -853,7 +853,7 @@
                             </div>
         
                            <div class="swiper-slide">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -877,7 +877,7 @@
                             </div>
 
                             <div class="swiper-slide debugg">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -901,7 +901,7 @@
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -925,7 +925,7 @@
                             </div>
         
                            <div class="swiper-slide">
-                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px]">
+                                <div class="bg-[#FFFFFF] w-[370px] h-[273px] rounded-[10px] mx-auto">
                                     <!-- img + postion -->
                                     <div class="ml-[50px] flex gap-[16px] relative">
                                         <!-- image -->
@@ -948,22 +948,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination mt-[45px] flex justify-center items-center"></div>
+                        <div class="swiper-pagination absolute bottom-20 left-0 w-full flex justify-center"></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- why choose us section -->
-        <div class="mt-[111px] hidden">
+        <div class="mt-[111px]">
             <div class="container">
                 <!-- 1st row -> text + imgs -->
-                <div class="flex gap-[100px]">
+                <div class="flex flex flex-col lg:flex-row gap-[100px]">
                     <div>
-                        <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA] mb-1">Why Choose Us</h4>
-                        <h2 class="font-[500] text-[50px] leading-[60px] text-[#222222] halyardDisplay_font">Trusted by 10 Lakh <br> Customers across 36k+ <br> Visitors hospital.</h2>
+                        <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA] mb-1">Why Choose Us</h4>
+                        <h2 class="text-center lg:text-left font-[500] text-[40px] lg:text-[50px] leading-[55px] lg:leading-[60px] text-[#222222] halyardDisplay_font">Trusted by 10 Lakh <br> Customers across 36k+ <br> Visitors hospital.</h2>
                     </div>
-                    <div class="flex gap-[30px]">
+                    <div class="flex gap-[30px] px-4 lg:px-0">
                         <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature1.png" alt="Feature1">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature1.png" alt="hoveredFeature1">
@@ -978,7 +978,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-[30px] mt-[30px]">
+                <div class="flex flex-col lg:flex-row gap-[30px] justify-center items-center mt-[30px]">
                         <div class="group cursor-pointer w-[270px] h-[243px] rounded-[10px] bg-[#ffffff] shadow-lg shadow-[#0000000D] flex flex-col justify-center items-center gap-[9px] transition-all duration-300">
                             <img class="group-hover:hidden block" src="./assests/Feature3.png" alt="Feature3">
                             <img class="hidden group-hover:block" src="./assests/hoveredFeature3.png" alt="hoveredFeature3">
@@ -1008,13 +1008,13 @@
         </div>
 
         <!-- blog section -->
-        <div class="mt-[111px] hidden">
+        <div class="mt-[111px]">
             <div class="container">
                 <div class="text-center">
                     <h4 class="font-[400] text-[24px] leading-[36x] text-[#6E9EFA] mb-[22px]">Our Blogs</h4>
-                    <h2 class="font-[500] text-[50px] leading-[24px] text-[#222222] halyardDisplay_font">Latest News & Blogs</h2>
+                    <h2 class="font-[500] text-[40px] lg:text-[50px] leading-[24px] text-[#222222] halyardDisplay_font">Latest News & Blogs</h2>
                 </div>
-                <div class="mt-[57px] flex gap-[30px] flex-col lg:flex-row">
+                <div class="mt-[57px] flex gap-[30px] flex-col lg:flex-row justify-center items-center">
                     <!-- blog 1 -->
                     <div class="bg-[#FFFFFF] shadow-lg shadow-[#0000000D] w-[370px] h-[560px] rounded-[10px]">
                         <img src="./assests/caseStudy1.png" alt="caseStudy1">
@@ -1024,7 +1024,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1042,7 +1042,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1060,7 +1060,7 @@
                                 <p class="font-[500] text-[24px] leading-[36x] text-[#2E2626] halyardDisplay_font mt-[7px]">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</p>
                             </div>
                             <!-- read more btn -->
-                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300">
+                            <div class="group relative border border-[#2222221A] bg-gray-100 mt-[30px] mb-[30px] rounded-[40px] w-[221px] min-h-[60px] flex bg-transparent hover:bg-[#6E9EFA] cursor-pointer transition-all duration-300 mx-auto">
                                 <button class="font-[500] text-[16px] leading-[24px] text-[#222222] uppercase py-[19px] pl-[32px] whitespace-nowrap group-hover:text-[#ffffff] cursor-pointer">Read more</button>
                                 <img class="ml-[34px] py-1 pr-1 group-hover:hidden" src="./assests/blackCircle.png" alt="blackCircle">
                                 <img class="ml-[34px] py-1 pr-1 hidden group-hover:block" src="./assests/whiteAboutCircle.png" alt="blueCircle">
@@ -1075,15 +1075,15 @@
         <!-- company slider section -->
     </main>
 
-    <footer class="hidden mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
+    <footer class="mt-[120px] bg-[url('./assests/footerBG.png')] bg-cover bg-no-repeat">
         <div class="container">
             <!-- newletter section -->
-            <div class="pt-[111px] flex gap-[102px]">
+            <div class="pt-[111px] flex flex-col lg:flex-row gap-[102px]">
                 <div>
-                    <h4 class="font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Get Newsletter Glenic</h4>
-                    <h2 class="font-[500] text-[50px] leading-[56px] text-[#FFFFFF] mt-[7px] halyardDisplay_font">I'll Help You Get <br> Back to Newsletter</h2>
+                    <h4 class="text-center lg:text-left font-[400] text-[24px] leading-[36px] text-[#6E9EFA]">Get Newsletter Glenic</h4>
+                    <h2 class="text-center lg:text-left font-[500] text-[40px] lg:text-[50px] leading-[56px] text-[#FFFFFF] mt-[7px] halyardDisplay_font">I'll Help You Get <br> Back to Newsletter</h2>
                 </div>
-                <div class="mt-15 border border-[#FFFFFF1A] rounded-[50px] w-[670px] h-[95px] flex items-center justify-between focus-within:border-[#6E9EFA] transition-colors duration-300">
+                <div class="lg:mt-15 border border-[#FFFFFF1A] rounded-[50px] lg:w-[670px] h-[95px] flex items-center justify-between focus-within:border-[#6E9EFA] transition-colors duration-300">
 
                     <input type="email" placeholder="Enter Your Newsletter..." class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
 
@@ -1098,8 +1098,8 @@
                 <hr class="h-[4px] bg-[#FFFFFF12] border-0"/>
             </div>
             <!-- logo + links -->
-            <div class="mt-[95px] pb-[107px]  flex">
-                <div>
+            <div class="mt-[95px] pb-[107px] flex flex-col lg:flex-row">
+                <div class=" ml-10 mt-10 lg:mt-0">
                     <img src="./assests/whiteLogo.png" alt="whiteLogo">
                     <h3 class="mt-[14px] font-[400] text-[18px] text-[#FFFFFF99]">In velit arcu posuere integer. Dolor sit am, <br> consectetur nun adipiscing elit.</h3>
                     <ul class="flex gap-[30px] justify-start items-center mt-[50px]">
@@ -1108,69 +1108,69 @@
                         <li class="group bg-[#FFFFFF0D] hover:bg-[#6E9EFA] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#FFFFFF4D] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
                     </ul>
                 </div>
-                <div class="ml-[85px]">
+                <div class="lg:ml-[85px] ml-10 mt-10 lg:mt-0">
                     <div>
                         <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font">Quick Links</h3>
                         <ul class="list-none mt-5">
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Home</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Home</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300"href="#">About us</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]"href="#">About us</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Services</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Services</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Portfolios</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Portfolios</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Blogs</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Blogs</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Contact Us</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="ml-[85px]">
+                <div class="lg:ml-[85px] ml-10 mt-10 lg:mt-0">
                     <div>
                         <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font">Service links</h3>
                         <ul class="list-none mt-5">
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Vaccination</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Vaccination</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300"href="#">Home visit</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]"href="#">Home visit</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Home visit</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Home visit</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Diagnostics</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Diagnostics</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Gynecology</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Gynecology</a>
                             </li>
                             <li class="mb-[14px] flex items-center gap-3 group transition-all duration-300">
-                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] hidden group-hover:block transition-all duration-300"></div>
-                                <a class="font-[400] text-[16px] text-[#FFFFFF99] group-hover:text-[#6E9EFA] transition-all duration-300" href="#">Immunology</a>
+                                <div class="bg-[#6E9EFA] w-[5px] h-[2px] rounded-[3px] scale-x-4 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+                                <a class="font-[400] text-[16px] text-[#FFFFFF99] transition-colors duration-300 group-hover:text-[#6E9EFA]" href="#">Immunology</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="ml-[48px]">
+                <div class="lg:ml-[48px] ml-10 mt-10 lg:mt-0">
                     <div>
                         <h3 class="font-[500] text-[24px] text-[#ffffff] halyardDisplay_font mb-[7px]">Contact info</h3>
                     </div>
@@ -1199,8 +1199,8 @@
         </div>
     </footer>
     <!-- footer copy right section -->
-    <div class="hidden bg-[#1F1F1F]">
-        <div class="flex flex-col lg:flex-row justify-center items-center">
+    <div class="bg-[#1F1F1F]">
+        <div class="flex flex-col lg:flex-row justify-center items-center py-4 lg:py-0">
             <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#6E9EFA]">Glenic</span> © Copyright-2023 All Rights Reserved.</h4>
         </div>
     </div>
