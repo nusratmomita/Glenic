@@ -154,7 +154,7 @@ var swiper_review = new Swiper(".review_swiper", {
     slidesPerView: 3,
     spaceBetween:30,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".review_swiper_pagination",
         clickable: true,
     },
     breakpoints: {
